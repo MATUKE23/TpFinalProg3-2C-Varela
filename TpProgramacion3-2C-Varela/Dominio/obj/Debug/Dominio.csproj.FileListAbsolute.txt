@@ -1,0 +1,6 @@
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Dominio\bin\Debug\Dominio.dll
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Dominio\bin\Debug\Dominio.pdb
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Dominio\obj\Debug\Dominio.dll
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Dominio\obj\Debug\Dominio.pdb

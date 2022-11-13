@@ -1,0 +1,9 @@
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\bin\Debug\Negocio.dll
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\bin\Debug\Negocio.pdb
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\bin\Debug\Dominio.dll
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\bin\Debug\Dominio.pdb
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\obj\Debug\Negocio.dll
+C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\obj\Debug\Negocio.pdb

@@ -1,0 +1,403 @@
+﻿++Solution 'TpProgramacion3-Licla-Varela' ‎(3 of 3 projects)
+i:{00000000-0000-0000-0000-000000000000}:TpProgramacion3-Licla-Varela.sln
+++Dominio
+i:{00000000-0000-0000-0000-000000000000}:Dominio
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++Properties
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:c:\repository\tp final\tpprogramacion3-licla-varela\dominio\properties\
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:c:\repository\tp final\tpprogramacion3-licla-varela\negocio\properties\
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\properties\
+++References
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++Articulo.cs
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:c:\repository\tp final\tpprogramacion3-licla-varela\dominio\articulo.cs
+++Categoria.cs
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:c:\repository\tp final\tpprogramacion3-licla-varela\dominio\categoria.cs
+++Imagen.cs
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:c:\repository\tp final\tpprogramacion3-licla-varela\dominio\imagen.cs
+++Usuario.cs
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:c:\repository\tp final\tpprogramacion3-licla-varela\dominio\usuario.cs
+++AssemblyInfo.cs
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:c:\repository\tp final\tpprogramacion3-licla-varela\dominio\properties\assemblyinfo.cs
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:c:\repository\tp final\tpprogramacion3-licla-varela\negocio\properties\assemblyinfo.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\properties\assemblyinfo.cs
+++Microsoft.CSharp
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Core
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Data
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Data.DataSetExtensions
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Net.Http
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:
+++System.Xml
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Xml.Linq
+i:{359a47c4-6326-4ce6-8b78-07afa48a97f1}:
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++Negocio
+i:{00000000-0000-0000-0000-000000000000}:Negocio
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++AccesoaDatos.cs
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:c:\repository\tp final\tpprogramacion3-licla-varela\negocio\accesoadatos.cs
+++ArticuloNegocio.cs
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:c:\repository\tp final\tpprogramacion3-licla-varela\negocio\articulonegocio.cs
+++ImagenNegocio.cs
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:c:\repository\tp final\tpprogramacion3-licla-varela\negocio\imagennegocio.cs
+++UsuarioNegocio.cs
+i:{26d01bf5-0bdb-4968-8335-175fce5790f2}:c:\repository\tp final\tpprogramacion3-licla-varela\negocio\usuarionegocio.cs
+++vista
+i:{00000000-0000-0000-0000-000000000000}:vista
+++App_Data
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\app_data\
+++App_Start
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\app_start\
+++Content
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\content\
+++estilos
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\estilos\
+++estilos.css
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\estilos\estilos.css
+++estilos2.css
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\estilos\estilos2.css
+++fonts
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\fonts\
+++glyphicons-halflings-regular.eot
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\fonts\glyphicons-halflings-regular.eot
+++glyphicons-halflings-regular.svg
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\fonts\glyphicons-halflings-regular.svg
+++glyphicons-halflings-regular.ttf
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\fonts\glyphicons-halflings-regular.ttf
+++glyphicons-halflings-regular.woff
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\fonts\glyphicons-halflings-regular.woff
+++glyphicons-halflings-regular.woff2
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\fonts\glyphicons-halflings-regular.woff2
+++Scripts
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\
+++Administrar Pedidos.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\administrar pedidos.aspx
+++Administrar Usuarios y Contraseñas.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\administrar usuarios y contraseñas.aspx
+++Bundle.config
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\bundle.config
+++caja.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\caja.aspx
+++Carrito.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\carrito.aspx
+++Default.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\default.aspx
+++Default.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\default.aspx.cs
+++Default.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\default.aspx.designer.cs
+++DefaultAdmin.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\defaultadmin.aspx
+++favicon.ico
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\favicon.ico
+++Favoritos.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\favoritos.aspx
+++Global.asax
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\global.asax
+++Log In.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\log in.aspx
+++Main Admin.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\main admin.aspx
+++Modificar Footer.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar footer.aspx
+++Modificar Header.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar header.aspx
+++Modificar Logo.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar logo.aspx
+++Modificar Ofertas.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar ofertas.aspx
+++Modificar Productos.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar productos.aspx
+++Modificar Quienes Somos.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar quienes somos.aspx
+++Ofertas.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\ofertas.aspx
+++packages.config
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\packages.config
+++Producto.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\producto.aspx
+++Productos.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\productos.aspx
+++Productos.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\productos.aspx.cs
+++Productos.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\productos.aspx.designer.cs
+++Quienes somos.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\quienes somos.aspx
+++Sign in Basic.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\sign in basic.aspx
+++Sign in Completo.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\sign in completo.aspx
+++Sign in Completo.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\sign in completo.aspx.cs
+++Sign in Completo.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\sign in completo.aspx.designer.cs
+++Site1.Master
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\site1.master
+++Site1.Master.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\site1.master.cs
+++Site1.Master.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\site1.master.designer.cs
+++Site2.Master
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\site2.master
+++TestConexionBase.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\testconexionbase.aspx
+++ViewSwitcher.ascx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\viewswitcher.ascx
+++Web.config
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\web.config
+++Antlr3.Runtime
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++AspNet.ScriptManager.bootstrap
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++AspNet.ScriptManager.jQuery
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++Microsoft.AspNet.FriendlyUrls
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++Microsoft.AspNet.Web.Optimization.WebForms
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++Microsoft.ScriptManager.MSAjax
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++Microsoft.ScriptManager.WebForms
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++Microsoft.Web.Infrastructure
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++Newtonsoft.Json
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.ComponentModel.DataAnnotations
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Configuration
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Drawing
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.EnterpriseServices
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Web
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Web.ApplicationServices
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Web.DynamicData
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Web.Entity
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Web.Extensions
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Web.Optimization
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++System.Web.Services
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++WebGrease
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:
+++BundleConfig.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\app_start\bundleconfig.cs
+++RouteConfig.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\app_start\routeconfig.cs
+++bootstrap-theme.css
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\content\bootstrap-theme.css
+++bootstrap-theme.css.map
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\content\bootstrap-theme.css.map
+++bootstrap-theme.min.css
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\content\bootstrap-theme.min.css
+++bootstrap-theme.min.css.map
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\content\bootstrap-theme.min.css.map
+++bootstrap.css
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\content\bootstrap.css
+++bootstrap.css.map
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\content\bootstrap.css.map
+++bootstrap.min.css
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\content\bootstrap.min.css
+++bootstrap.min.css.map
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\content\bootstrap.min.css.map
+++Site.css
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\content\site.css
+++WebForms
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\
+++bootstrap.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\bootstrap.js
+++bootstrap.min.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\bootstrap.min.js
+++jquery-3.4.1.intellisense.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\jquery-3.4.1.intellisense.js
+++jquery-3.4.1.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\jquery-3.4.1.js
+++jquery-3.4.1.min.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\jquery-3.4.1.min.js
+++jquery-3.4.1.min.map
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\jquery-3.4.1.min.map
+++jquery-3.4.1.slim.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\jquery-3.4.1.slim.js
+++jquery-3.4.1.slim.min.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\jquery-3.4.1.slim.min.js
+++jquery-3.4.1.slim.min.map
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\jquery-3.4.1.slim.min.map
+++modernizr-2.8.3.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\modernizr-2.8.3.js
+++Administrar Pedidos.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\administrar pedidos.aspx.cs
+++Administrar Pedidos.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\administrar pedidos.aspx.designer.cs
+++Administrar Usuarios y Contraseñas.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\administrar usuarios y contraseñas.aspx.cs
+++Administrar Usuarios y Contraseñas.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\administrar usuarios y contraseñas.aspx.designer.cs
+++caja.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\caja.aspx.cs
+++caja.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\caja.aspx.designer.cs
+++Carrito.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\carrito.aspx.cs
+++Carrito.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\carrito.aspx.designer.cs
+++DefaultAdmin.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\defaultadmin.aspx.cs
+++DefaultAdmin.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\defaultadmin.aspx.designer.cs
+++Favoritos.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\favoritos.aspx.cs
+++Favoritos.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\favoritos.aspx.designer.cs
+++Global.asax.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\global.asax.cs
+++Log In.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\log in.aspx.cs
+++Log In.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\log in.aspx.designer.cs
+++Main Admin.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\main admin.aspx.cs
+++Main Admin.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\main admin.aspx.designer.cs
+++Modificar Footer.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar footer.aspx.cs
+++Modificar Footer.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar footer.aspx.designer.cs
+++Modificar Header.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar header.aspx.cs
+++Modificar Header.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar header.aspx.designer.cs
+++Modificar Logo.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar logo.aspx.cs
+++Modificar Logo.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar logo.aspx.designer.cs
+++Modificar Ofertas.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar ofertas.aspx.cs
+++Modificar Ofertas.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar ofertas.aspx.designer.cs
+++Modificar Productos.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar productos.aspx.cs
+++Modificar Productos.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar productos.aspx.designer.cs
+++Modificar Quienes Somos.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar quienes somos.aspx.cs
+++Modificar Quienes Somos.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\modificar quienes somos.aspx.designer.cs
+++Ofertas.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\ofertas.aspx.cs
+++Ofertas.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\ofertas.aspx.designer.cs
+++Producto.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\producto.aspx.cs
+++Producto.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\producto.aspx.designer.cs
+++Quienes somos.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\quienes somos.aspx.cs
+++Quienes somos.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\quienes somos.aspx.designer.cs
+++Sign in Basic.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\sign in basic.aspx.cs
+++Sign in Basic.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\sign in basic.aspx.designer.cs
+++Site2.Master.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\site2.master.cs
+++Site2.Master.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\site2.master.designer.cs
+++TestConexionBase.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\testconexionbase.aspx.cs
+++TestConexionBase.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\testconexionbase.aspx.designer.cs
+++ViewSwitcher.ascx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\viewswitcher.ascx.cs
+++ViewSwitcher.ascx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\viewswitcher.ascx.designer.cs
+++Web.Debug.config
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\web.debug.config
+++Web.Release.config
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\web.release.config
+++MSAjax
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\
+++DetailsView.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\detailsview.js
+++Focus.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\focus.js
+++GridView.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\gridview.js
+++Menu.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\menu.js
+++MenuStandards.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\menustandards.js
+++SmartNav.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\smartnav.js
+++TreeView.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\treeview.js
+++WebForms.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\webforms.js
+++WebParts.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\webparts.js
+++WebUIValidation.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\webuivalidation.js
+++MicrosoftAjax.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\microsoftajax.js
+++MicrosoftAjaxApplicationServices.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\microsoftajaxapplicationservices.js
+++MicrosoftAjaxComponentModel.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\microsoftajaxcomponentmodel.js
+++MicrosoftAjaxCore.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\microsoftajaxcore.js
+++MicrosoftAjaxGlobalization.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\microsoftajaxglobalization.js
+++MicrosoftAjaxHistory.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\microsoftajaxhistory.js
+++MicrosoftAjaxNetwork.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\microsoftajaxnetwork.js
+++MicrosoftAjaxSerialization.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\microsoftajaxserialization.js
+++MicrosoftAjaxTimer.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\microsoftajaxtimer.js
+++MicrosoftAjaxWebForms.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\microsoftajaxwebforms.js
+++MicrosoftAjaxWebServices.js
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\scripts\webforms\msajax\microsoftajaxwebservices.js
+++WebForm1.aspx
+++WebForm1.aspx.cs
+++WebForm1.aspx.designer.cs
+++Error0.aspx
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\error0.aspx
+++Error0.aspx.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\error0.aspx.cs
+++Error0.aspx.designer.cs
+i:{323d09fc-aa2c-4ab0-8871-8388df9622d0}:c:\repository\tp final\tpprogramacion3-licla-varela\ecommerce\error0.aspx.designer.cs

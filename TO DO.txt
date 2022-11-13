@@ -1,0 +1,34 @@
+TO DO:
+-	Alta baja, modificación
+-	Manejar seguimiento de status del pedido
+-	Notificaciones via email
+-	Validaciones
+-	Agregar fecha y hora de estado en la parte de administración de pedidos.
+-	Carrusel de ofertas
+-	Selección de Favoritos
+-	Registracion completa
+- 	poner mensaje informativo de medios de pagos aceptados
+-	Una suerte de chat o registro de lo conversado.
+
+En el staNDARD  VOS ENTREGAS LOS DATOS DE CTA BANCARIA.
+LINK DE MERCADO PAGO
+
+Genera el detalle del pedido que contendra:
+- Q de items x Articulo seleccionados (Carrito)
+- Descripcion del articulo (Carrito)
+- ID del articulo (Carrito)
+- ID del cliente
+- Monto a pagar
+- Domicilio
+- Forma de envio seleccionada
+- Forma de pago seleccionada
+- Tipo de Articulo
+
+
+
+
+DONE:
+-	Log in
+-	Pantallas Usuario
+-	Pantallas Admin
+

@@ -1,0 +1,28 @@
+﻿.parrafo
+{
+    color: red;
+}
+
+.navbar {
+    background-color: #3F3E49;
+    color: #FFFFFF;
+}
+
+.nombre{
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+a:link,a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #D3D1DE;
+}
+
+a:active {
+    color: #C0BFC9;
+}
+

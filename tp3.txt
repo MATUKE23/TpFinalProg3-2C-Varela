@@ -1,0 +1,34 @@
+Ecommerce: 
+enlace draw.io: https://app.diagrams.net/#HMATUKE23%2FPROYECTO-FINAL-PROG-III%2Fmain%2FUntitled%20Diagram.drawio
+
+Clases:
+
+-Artículos(id, Código, Descripción, Dimensiones, precio, tipo)
+
+Usuarios(id, Usuario, contraseña, nombre completo,  rol)
+-Cliente --------> Usuario + (DNI, email,contacto, dirección, numero, localidad, provincia, país, C.P.) ventanas de compras
+-Vendedor -----> usuario () ventanas de cobro, envío de comprobantes y/o mercadería, permite carga stock y CRUD de artículos
+
+-PedidoVenta(Nro de comprobante, cliente, vendedor, fecha de venta, total, Forma de pago, envio, subtotal, DetallePedido[x],estado)
+-DetallePedido(artículo, cantidadVendida, monto);
+
+Cliente:
+-Login y registro
+-Ver los productos y precios.
+-Ver los que carga en el carrito
+-puede reservar productos
+-puede enviar pedido de venta.
+
+
+-Vendedor:
+-ver listado de pedidos, con detalle y estado de los mismos
+-poder procesar los pedidos
+-confirmar la venta.
+-cargar stock
+-cargar nuevos productos
+-modificar precios
+-gestionar clientes
+
+-Solicitud(Nro de comprobante, cliente, fecha de alta, DetalleSolicitud[x], estado)
+-DetalleSolicitud(articulo, cantidadVendida,)
+-Mensaje(mensaje, fecha, hora, destinatario, remitente).
