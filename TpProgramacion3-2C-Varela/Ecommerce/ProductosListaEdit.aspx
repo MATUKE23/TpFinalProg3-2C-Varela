@@ -4,9 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <h1>Lista de Productos</h1>
 
-       <asp:GridView ID="dgvProductos" runat="server" DataKeyNames="Id" CssClass="table" AutoGenerateColumns="false" 
+       <asp:GridView ID="dgvProductos" runat="server" DataKeyNames="Id" CssClass="table" class="card-text" AutoGenerateColumns="false" 
            OnSelectedIndexChanged="dgvProductos_SelectedIndexChanged" OnPageIndexChanging="dgvProductos_PageIndexChanging"             
-        AllowPaging="true" PageSize="5">
+        AllowPaging="true" PageSize="5" >
         <%--agrego paginacion y tope de paginas a la lista--%>
         <Columns>
             <asp:BoundField HeaderText="Nombre de articulo" DataField="DESCRIPCION" />

@@ -17,6 +17,9 @@ namespace Ecommerce
             ArticuloNegocio negocio = new ArticuloNegocio();
             ListaArticulos = negocio.listar();
 
+            Session.Add("ListaArticulos", ListaArticulos);
+
+
         }
 
 

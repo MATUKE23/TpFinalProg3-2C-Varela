@@ -13,7 +13,7 @@
             <div class="card-body">
                 <h5 class="card-title"><%: arti.DESCRIPCION%></h5>
              
-                <a href="Producto.aspx?id=<%: arti.ID %>" class="btn btn-success">Ver Detalle</a>
+                <a href="Producto.aspx?id=<%:arti.ID %>" class="btn btn-success">Ver Detalle</a>
             </div>
         </div>
    
