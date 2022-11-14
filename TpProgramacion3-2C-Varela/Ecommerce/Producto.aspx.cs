@@ -14,15 +14,15 @@ namespace Ecommerce
         public Articulo articulo { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            int id_articulo = int.Parse(Request.QueryString["id_producto"].ToString());
-            List<Articulo> lista = (List<Articulo>)Session["ListaArticulos"];
-            foreach (Articulo art in lista)
+          //  int id = int.Parse(Request.QueryString["id"].ToString());
+            /*List<Articulo> lista = (List<Articulo>)Session["ListaArticulos"];
+            foreach (Articulo arti in lista)
             {
-                if (art.ID == id_articulo)
+                if (arti.ID == id)
                 {
-                    articulo = art;
+                    articulo = arti;
                 }
-            }
+            }*/
         }
 
         protected void btnAgregar_Click(object sender, EventArgs e)

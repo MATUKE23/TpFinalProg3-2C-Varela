@@ -12,10 +12,10 @@ namespace Dominio
 
         public string CODIGO { get; set; }
         public string DESCRIPCION { get; set; }
+        public string OBS { get; set; }
 
         public bool ESTADO { get; set; }
 
-        public string OBS { get; set; }
 
 
     }

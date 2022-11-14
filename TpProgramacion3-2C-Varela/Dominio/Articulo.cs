@@ -15,8 +15,11 @@ namespace Dominio
         [DisplayName("Código")]
         public string CODIGO { get; set; }
 
-        [DisplayNameAttribute("Descripción")]
+        [DisplayNameAttribute("Nombre de Articulo")]
         public string DESCRIPCION { get; set; }
+
+        [DisplayNameAttribute("Descripción Adicional")]
+        public string DESCRIPCION_AD { get; set; }
 
         [DisplayNameAttribute("Precio")]
         public decimal PRECIO { get; set; }
@@ -33,8 +36,8 @@ namespace Dominio
         [DisplayNameAttribute("ESTADO")]
         public bool ESTADO { get; set; }
 
-        [DisplayNameAttribute("ID_CATEGORIA")]
-        public int ID_CATEGORIA { get; set; }
+        [DisplayNameAttribute("CATEGORIA")]
+        public Categoria ID_CATEGORIA { get; set; }
 
         [DisplayNameAttribute("CANTIDAD")]
         public int CANTIDAD { get; set; }

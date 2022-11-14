@@ -7,3 +7,12 @@ C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\obj\Debug\Negocio.cs
 C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\obj\Debug\Negocio.dll
 C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Negocio\obj\Debug\Negocio.pdb
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Negocio\bin\Debug\Negocio.dll
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Negocio\bin\Debug\Negocio.pdb
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Negocio\bin\Debug\Dominio.dll
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Negocio\bin\Debug\Dominio.pdb
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Negocio\obj\Debug\Negocio.dll
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Negocio\obj\Debug\Negocio.pdb

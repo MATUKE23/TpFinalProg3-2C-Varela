@@ -26,8 +26,13 @@
                     <ul class="navbar-nav mx-auto">
                         <%/* UL =Unordened List*/ %>
                         <li class="nav-item active mx-5"><%/*li= link*/ %>
-                            <a class="nav-link" href="Modificar Productos.aspx">Modificar Productos</a>
+                            <a class="nav-link" href="ProductosListaEdit.aspx">Modificar Productos</a>
                         </li>
+
+                        <li class="nav-item active mx-5">
+                            <a class="nav-link" href="Modificar Productos.aspx">Formulario Modificar Productos</a>
+                        </li>
+
                         <li class="nav-item active mx-5">
                             <a class="nav-link" href="Modificar Ofertas.aspx">Modificar Ofertas</a>
                         </li>
@@ -38,15 +43,15 @@
                             <a class="nav-link" href="Administrar Pedidos.aspx">Administrar Pedidos</a>
                         </li>
 
-                           <li class="nav-item active mx-5">
-                           <a class="nav-link" href="Administrar Usuarios y Contraseñas.aspx">Administrar Usuarios y Contraseñas</a>
+                        <li class="nav-item active mx-5">
+                            <a class="nav-link" href="Administrar Usuarios y Contraseñas.aspx">Administrar Usuarios y Contraseñas</a>
                         </li>
 
 
                         <li class="nav-item active mx-5">
                             <asp:LinkButton ID="LinkButton1" runat="server" CssClass="nav-link" OnClick="Desloguear">Logout</asp:LinkButton>
-                             </li>
-               
+                        </li>
+
                     </ul>
                 </div>
             </nav>

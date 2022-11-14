@@ -4,3 +4,9 @@ C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Dominio\obj\Debug\Dominio.cs
 C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Dominio\obj\Debug\Dominio.dll
 C:\Repository\TP FINAL\TpProgramacion3-Licla-Varela\Dominio\obj\Debug\Dominio.pdb
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Dominio\bin\Debug\Dominio.dll
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Dominio\bin\Debug\Dominio.pdb
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Dominio\obj\Debug\Dominio.dll
+C:\Users\matuk\Source\Repos\TpFinalProg3-2C-Varela\TpProgramacion3-2C-Varela\Dominio\obj\Debug\Dominio.pdb

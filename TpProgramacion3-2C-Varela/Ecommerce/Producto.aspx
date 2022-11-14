@@ -23,5 +23,5 @@
                 <asp:Button ID="btnPagar" runat="server" CssClass="btn btn-secondary"  Text="Agregar e ir a pagar" OnClick="btnPagar_Click"/>
             </div>
         </div>
-
+</div>
 </asp:Content>

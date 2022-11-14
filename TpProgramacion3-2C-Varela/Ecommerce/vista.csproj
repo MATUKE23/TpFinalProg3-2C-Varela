@@ -145,6 +145,7 @@
     <Content Include="PedidosCliente.aspx" />
     <Content Include="Producto.aspx" />
     <Content Include="Productos.aspx" />
+    <Content Include="ProductosListaEdit.aspx" />
     <Content Include="Quienes somos.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -327,6 +328,13 @@
     </Compile>
     <Compile Include="Productos.aspx.designer.cs">
       <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosListaEdit.aspx.cs">
+      <DependentUpon>ProductosListaEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductosListaEdit.aspx.designer.cs">
+      <DependentUpon>ProductosListaEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quienes somos.aspx.cs">
