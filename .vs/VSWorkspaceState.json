@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TpProgramacion3-2C-Varela",
+    "\\TpProgramacion3-2C-Varela\\Ecommerce"
   ],
-  "SelectedNode": "\\TpProgramacion3-2C-Varela.sln",
+  "SelectedNode": "\\TpProgramacion3-2C-Varela\\Ecommerce\\Productos.aspx.cs",
   "PreviewInSolutionExplorer": false
 }

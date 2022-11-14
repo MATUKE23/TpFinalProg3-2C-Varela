@@ -22,48 +22,46 @@ namespace Ecommerce
             try
             {
                 //configuración inicial de la pantalla.
-               /* if (!IsPostBack) //Evita recarga 
+               if (!IsPostBack) //Evita recarga 
                 {
                     ArticuloNegocio negocio = new ArticuloNegocio();
                     List<Articulo> lista = negocio.listar();
 
-                    ddlCategoria.DataSource = lista; //Desplegable de tipo
-                    ddlCategoria.DataValueField = "Id"; // este valor oculto es el value que despues vamos a capturar de la seleccion de los elemantos. Uso selected Value
-                    ddlCategoria.DataTextField = "Descripcion";//es el valor quq quiero que muestre
-                    ddlCategoria.DataBind();
-
-
+                    ddlDescCategoria.DataSource = lista; //Desplegable de tipo
+                    ddlDescCategoria.DataValueField = "ID"; // este valor oculto es el value que despues vamos a capturar de la seleccion de los elemantos. Uso selected Value
+                    ddlDescCategoria.DataTextField = "DESCRIPCION";//es el valor quq quiero que muestre
+                    ddlDescCategoria.DataBind();
 
                 }
-               */
+               
 
                 //configuración si estamos modificando.
                 string id = Request.QueryString["id"] != null ? Request.QueryString["id"].ToString() : "";
                 if (id != "" && !IsPostBack)
                 {
-                    /*
+                    
                     ArticuloNegocio negocio = new ArticuloNegocio();
-                    //List<Pokemon> lista = negocio.listar(id);
-                    //Pokemon seleccionado = lista[0];
-                   Articulo seleccionado = negocio.listar(id);
+                   Articulo seleccionado = (negocio.listar(id))[0];
 
                     //guardo pokemon seleccionado en session
                     Session.Add("ArtSeleccionado", seleccionado);
 
                     //pre cargar todos los campos...
                     txtId.Text = id;
-                    txtDesc. = seleccionado.;
-                    txtDescripcion.Text = seleccionado.Descripcion;
-                    txtImagenUrl.Text = seleccionado.UrlImagen;
-                    txtNumero.Text = seleccionado.Numero.ToString();
-
-                    ddlTipo.SelectedValue = seleccionado.Tipo.Id.ToString();
-                    ddlDebilidad.SelectedValue = seleccionado.Debilidad.Id.ToString();
+                    txtCodigo.Text = seleccionado.CODIGO;
+                    txtDesc.Text = seleccionado.DESCRIPCION;
+                    txtDescAD.Text = seleccionado.DESCRIPCION_AD;
+                    txtImagenUrl.Text = seleccionado.URLIMAGEN;
+                    txtObs.Text = seleccionado.OBS;
+                    CheckboxEstado.Text = seleccionado.ESTADO.ToString();
+                    txtPrecio.Text = seleccionado.PRECIO.ToString();
+                    
+                    ddlDescCategoria.SelectedValue = seleccionado.CATEGORIA.ToString();
                     txtImagenUrl_TextChanged(sender, e);
 
                     //configurar acciones
-                    if (!seleccionado.Activo)
-                        btnInactivar.Text = "Reactivar";*/
+                    //if (!seleccionado.Activo)
+                     //   btnInactivar.Text = "Reactivar";
                 }
 
             }
@@ -97,18 +95,28 @@ namespace Ecommerce
                 @URLimagen varchar(400)
                 */
 
-                nuevo.CODIGO = TextCodigoArt.Text;
-                nuevo.DESCRIPCION = TextDescAdicional.Text;
-                nuevo.DESCRIPCION_AD = txtDescripcion.Text;
-                nuevo.PRECIO = int.Parse(txtPrecio.Text);
+
+                nuevo.CODIGO = txtCodigo.Text;
+                nuevo.DESCRIPCION = txtDesc.Text;
+                nuevo.DESCRIPCION_AD = txtDescAD.Text;
                 nuevo.OBS = txtObs.Text;
-                //nuevo.ESTADO = bool.Parse(CheckboxEstado.Checked);
+                nuevo.ESTADO = CheckboxEstado.Checked;
+                nuevo.PRECIO = int.Parse(txtPrecio.Text);
                 nuevo.URLIMAGEN = txtImagenUrl.Text;
+
+                if (Request.QueryString["ID"] != null)
+                {
+                    nuevo.ID = int.Parse(txtId.Text);
+                    negocio.ModificarArticuloconSP(nuevo);
+                }
+
+                else 
+                negocio.AgregarProductoConSP(nuevo); //aca agrego el nuevo pokemon en la DB
                 
+                //nuevo.ESTADO = bool.Parse(CheckboxEstado.Checked);
                 //nuevo.ID_CATEGORIA = new Categoria();
                 //nuevo.ID_CATEGORIA.ID = int.Parse(ddlCategoria.SelectedValue);
 
-                negocio.AgregarProductoConSP(nuevo); //aca agrego el nuevo pokemon en la DB
 
                 Response.Redirect("ProductosListaEdit.aspx", false);// me lleva a la pantalla del listado
 

@@ -9,10 +9,13 @@
         AllowPaging="true" PageSize="5" >
         <%--agrego paginacion y tope de paginas a la lista--%>
         <Columns>
+             <asp:BoundField HeaderText="Codigo de articulo" DataField="CODIGO" />
             <asp:BoundField HeaderText="Nombre de articulo" DataField="DESCRIPCION" />
-            <asp:BoundField HeaderText="Descripcion" DataField="DESCRIPCION_AD" />
-            <asp:BoundField HeaderText="PRECIO" DataField="Precio" />
-            <asp:CommandField HeaderText="Accion" ShowSelectButton="true" SelectText="😵" />
+            <asp:BoundField HeaderText="Descripcion Adicional" DataField="DESCRIPCION_AD" />
+            <asp:BoundField HeaderText="Observacion" DataField="OBS" />
+            <asp:BoundField HeaderText="Estado" DataField="ESTADO" />
+            <asp:BoundField HeaderText="PRECIO" DataField="PRECIO" />
+            <asp:CommandField HeaderText="Accion"  ShowSelectButton="true" SelectText="😵" />
             <%--agrego Emojo y boton--%>
         </Columns>
 

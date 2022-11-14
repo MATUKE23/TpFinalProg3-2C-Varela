@@ -9,8 +9,9 @@
                 <img src="<%=articulo.URLIMAGEN%>" alt="Imagen" width="90%" height="90%" />
             </div>
             <div class="detalle col-lg-6">
-                <h3><%=articulo.CODIGO%> - <%=articulo.DESCRIPCION%></h3>
-                <p class="precio">$<%=articulo.PRECIO%></p>
+                <h3> <%=articulo.DESCRIPCION%></h3>
+                 <h5 class="card-title"><%: articulo.DESCRIPCION_AD%></h5>
+                <p class="precio"><%=articulo.PRECIO +"$"%></p>
                 <h4>Stock Disponible</h4>
                 <p class="unidades">10 Unidades</p>
                 <p class="cantidad">

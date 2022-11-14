@@ -37,7 +37,7 @@ namespace Dominio
         public bool ESTADO { get; set; }
 
         [DisplayNameAttribute("CATEGORIA")]
-        public Categoria ID_CATEGORIA { get; set; }
+        public Categoria CATEGORIA { get; set; }
 
         [DisplayNameAttribute("CANTIDAD")]
         public int CANTIDAD { get; set; }
