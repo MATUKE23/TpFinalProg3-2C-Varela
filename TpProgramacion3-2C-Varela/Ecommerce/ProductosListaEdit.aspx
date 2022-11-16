@@ -6,7 +6,7 @@
 
        <asp:GridView ID="dgvProductos" runat="server" DataKeyNames="Id" CssClass="table" class="card-text" AutoGenerateColumns="false" 
            OnSelectedIndexChanged="dgvProductos_SelectedIndexChanged" OnPageIndexChanging="dgvProductos_PageIndexChanging"             
-        AllowPaging="true" PageSize="5" >
+        AllowPaging="false" PageSize="5"  >
         <%--agrego paginacion y tope de paginas a la lista--%>
         <Columns>
              <asp:BoundField HeaderText="Codigo de articulo" DataField="CODIGO" />
