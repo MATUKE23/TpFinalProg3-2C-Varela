@@ -17,15 +17,15 @@ namespace Ecommerce
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtId.Enabled = false;
-            ConfirmaEliminacion = false;
+            txtId.Enabled = false;// Grisea el campo ID
+            
             try
             {
                 //configuración inicial de la pantalla.
                 if (!IsPostBack) //Evita recarga 
                 {
-                    ArticuloNegocio negocio = new ArticuloNegocio();
-                    List<Articulo> lista = negocio.listar();
+                    CategoriaNegocio negocio = new CategoriaNegocio();
+                    List<Categoria> lista = negocio.listarCategoria();
 
                     ddlDescCategoria.DataSource = lista; //Desplegable de tipo
                     ddlDescCategoria.DataValueField = "ID"; // este valor oculto es el value que despues vamos a capturar de la seleccion de los elemantos. Uso selected Value
@@ -55,7 +55,7 @@ namespace Ecommerce
                     txtObs.Text = seleccionado.OBS;
                     txtPrecio.Text = seleccionado.PRECIO.ToString();
 
-                    ddlDescCategoria.SelectedValue = seleccionado.CATEGORIA.ID.ToString();
+                    ddlDescCategoria.SelectedValue = seleccionado.CATEG.ID.ToString();
                     txtImagenUrl_TextChanged(sender, e);
 
                     //configurar acciones

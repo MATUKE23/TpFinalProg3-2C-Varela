@@ -43,12 +43,12 @@ namespace Negocio
                     aux.TIPO = (string)lector["TIPO"];
                     aux.OBS = (string)lector["OBS"];
                     aux.ESTADO = (bool)lector["ESTADO"];
-                 
-                    aux.CATEGORIA = new Categoria();
-                    aux.CATEGORIA.ID = (int)lector["IDCATEGORIA"];
-                    aux.CATEGORIA.DESCRIPCION = (string)lector["DESC_CAT"];
+
+                    aux.CATEG = new Categoria();
+                    aux.CATEG.ID = (int)lector["IDCATEGORIA"];
+                    aux.CATEG.DESCRIPCION = (string)lector["DESC_CAT"];
                     aux.URLIMAGEN = (string)lector["URLIMAGEN"];
-                  
+
 
                     lista.Add(aux);
 
@@ -109,7 +109,7 @@ namespace Negocio
 
         }
 
-         public void ModificarArticuloconSP(Articulo arti)
+        public void ModificarArticuloconSP(Articulo arti)
         {
             AccesoaDatos datos = new AccesoaDatos();
             try
@@ -164,6 +164,52 @@ namespace Negocio
             {
                 throw ex;
             }
+        }
+
+
+        public List<Articulo> ListarSoloActivos()
+        {
+            List<Articulo> lista = new List<Articulo>();
+            AccesoaDatos datos = new AccesoaDatos();
+
+            try
+            {
+                datos.setearSP("ListarSoloActivos");
+
+                datos.ejecutarLectura();
+                while (datos.Lector.Read())
+                {
+                    Articulo aux = new Articulo();
+
+                    aux.ID = (int)datos.Lector["ID"];
+                    aux.CODIGO = (string)datos.Lector["CODIGO"]; //entre comillas es el el nombre que tiene en la base
+                    aux.DESCRIPCION = (string)datos.Lector["DART"];
+                    aux.DESCRIPCION_AD = (string)datos.Lector["DART_AD"];
+                    aux.PRECIO = decimal.Parse(datos.Lector["PRECIO"].ToString());
+                    aux.TIPO = (string)datos.Lector["TIPO"];
+                    aux.OBS = (string)datos.Lector["OBS"];
+                    aux.ESTADO = (bool)datos.Lector["ESTADO"];
+                    aux.CATEG = new Categoria();
+                    aux.CATEG.ID = (int)datos.Lector["IDCATEGORIA"];
+                    aux.CATEG.DESCRIPCION = (string)datos.Lector["DESC_CAT"];
+                    aux.URLIMAGEN = (string)datos.Lector["URLIMAGEN"];
+
+                                    
+
+                    lista.Add(aux);
+                }
+
+                return lista;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+
+
         }
     }
 }

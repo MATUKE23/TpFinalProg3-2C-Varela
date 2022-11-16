@@ -16,6 +16,10 @@ namespace Dominio
 
         public bool ESTADO { get; set; }
 
+        public override string ToString()
+        {
+            return DESCRIPCION;
+        }
 
 
     }

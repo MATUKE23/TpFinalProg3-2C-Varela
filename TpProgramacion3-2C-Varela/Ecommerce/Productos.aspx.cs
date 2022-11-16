@@ -15,10 +15,13 @@ namespace Ecommerce
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
-            ListaArticulos = negocio.listar();
+            ListaArticulos = negocio.ListarSoloActivos();
 
-            Session.Add("ListaArticulos", ListaArticulos);
+                  
 
+           Session.Add("ListaArticulos", ListaArticulos);
+          
+            
 
         }
 
