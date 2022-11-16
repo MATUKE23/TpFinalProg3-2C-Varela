@@ -22,7 +22,7 @@ namespace Ecommerce
             try
             {
                 //configuración inicial de la pantalla.
-               if (!IsPostBack) //Evita recarga 
+                if (!IsPostBack) //Evita recarga 
                 {
                     ArticuloNegocio negocio = new ArticuloNegocio();
                     List<Articulo> lista = negocio.listar();
@@ -33,15 +33,15 @@ namespace Ecommerce
                     ddlDescCategoria.DataBind();
 
                 }
-               
+
 
                 //configuración si estamos modificando.
                 string id = Request.QueryString["id"] != null ? Request.QueryString["id"].ToString() : "";
                 if (id != "" && !IsPostBack)
                 {
-                    
+
                     ArticuloNegocio negocio = new ArticuloNegocio();
-                   Articulo seleccionado = (negocio.listar(id))[0];
+                    Articulo seleccionado = (negocio.listar(id))[0];
 
                     //guardo pokemon seleccionado en session
                     Session.Add("ArtSeleccionado", seleccionado);
@@ -53,15 +53,14 @@ namespace Ecommerce
                     txtDescAD.Text = seleccionado.DESCRIPCION_AD;
                     txtImagenUrl.Text = seleccionado.URLIMAGEN;
                     txtObs.Text = seleccionado.OBS;
-                    CheckboxEstado.Text = seleccionado.ESTADO.ToString();
                     txtPrecio.Text = seleccionado.PRECIO.ToString();
-                    
-                    ddlDescCategoria.SelectedValue = seleccionado.CATEGORIA.ToString();
+
+                    ddlDescCategoria.SelectedValue = seleccionado.CATEGORIA.ID.ToString();
                     txtImagenUrl_TextChanged(sender, e);
 
                     //configurar acciones
-                    //if (!seleccionado.Activo)
-                     //   btnInactivar.Text = "Reactivar";
+                    if (!seleccionado.ESTADO)
+                      btnInactivar.Text = "Reactivar";
                 }
 
             }
@@ -100,7 +99,6 @@ namespace Ecommerce
                 nuevo.DESCRIPCION = txtDesc.Text;
                 nuevo.DESCRIPCION_AD = txtDescAD.Text;
                 nuevo.OBS = txtObs.Text;
-                nuevo.ESTADO = CheckboxEstado.Checked;
                 nuevo.PRECIO = int.Parse(txtPrecio.Text);
                 nuevo.URLIMAGEN = txtImagenUrl.Text;
 
@@ -110,9 +108,9 @@ namespace Ecommerce
                     negocio.ModificarArticuloconSP(nuevo);
                 }
 
-                else 
-                negocio.AgregarProductoConSP(nuevo); //aca agrego el nuevo pokemon en la DB
-                
+                else
+                    negocio.AgregarProductoConSP(nuevo); //aca agrego el nuevo pokemon en la DB
+
                 //nuevo.ESTADO = bool.Parse(CheckboxEstado.Checked);
                 //nuevo.ID_CATEGORIA = new Categoria();
                 //nuevo.ID_CATEGORIA.ID = int.Parse(ddlCategoria.SelectedValue);
@@ -133,6 +131,22 @@ namespace Ecommerce
 
         }
 
+        protected void btnInactivar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                Articulo seleccionado = (Articulo)Session["ArtSeleccionado"]; //recupero el objeto session
 
+                negocio.eliminarLogico(seleccionado.ID, !seleccionado.ESTADO);//dependiendo del estado el metodo activa o inactiva. Le mando el estado opuesto
+                Response.Redirect("ProductosListaEdit.aspx", false);
+
+            }
+            catch (Exception ex)
+            {
+                Session.Add("error", ex.ToString());
+                Response.Redirect("Error0.aspx");
+            }
+        }
     }
 }

@@ -29,10 +29,7 @@
                             <a class="nav-link" href="ProductosListaEdit.aspx">Modificar Productos</a>
                         </li>
 
-                        <li class="nav-item active mx-5">
-                            <a class="nav-link" href="Modificar Productos.aspx">Formulario Modificar Productos</a>
-                        </li>
-
+                  
                         <li class="nav-item active mx-5">
                             <a class="nav-link" href="Modificar Ofertas.aspx">Modificar Ofertas</a>
                         </li>

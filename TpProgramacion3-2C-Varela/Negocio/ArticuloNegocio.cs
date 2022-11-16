@@ -46,9 +46,9 @@ namespace Negocio
                  
                     aux.CATEGORIA = new Categoria();
                     aux.CATEGORIA.ID = (int)lector["IDCATEGORIA"];
-                    aux.URLIMAGEN = (string)lector["URLIMAGEN"];
                     aux.CATEGORIA.DESCRIPCION = (string)lector["DESC_CAT"];
-                   // aux.ID_CATEGORIA.ID = (int)lector["IDCATEGORIA"];
+                    aux.URLIMAGEN = (string)lector["URLIMAGEN"];
+                  
 
                     lista.Add(aux);
 
@@ -146,6 +146,23 @@ namespace Negocio
             finally
             {
                 datos.cerrarConexion();
+            }
+        }
+
+
+        public void eliminarLogico(int id, bool activo = false)
+        {
+            try
+            {
+                AccesoaDatos datos = new AccesoaDatos();
+                datos.setearConsulta("update ARTICULOS set ESTADO = @activo Where id = @id");
+                datos.setearParametro("@id", id);
+                datos.setearParametro("@activo", activo);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
     }

@@ -69,15 +69,6 @@ namespace Ecommerce
         protected global::System.Web.UI.WebControls.TextBox txtObs;
 
         /// <summary>
-        /// CheckboxEstado control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckboxEstado;
-
-        /// <summary>
         /// txtPrecio control.
         /// </summary>
         /// <remarks>
@@ -121,6 +112,15 @@ namespace Ecommerce
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAceptar;
+
+        /// <summary>
+        /// btnInactivar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnInactivar;
 
         /// <summary>
         /// ddlDescCategoria control.

@@ -35,35 +35,35 @@
                     <asp:TextBox runat="server" ID="txtObs" CssClass="form-control" />
                 </div>
 
-                <asp:CheckBox Tex="Estado" ID="CheckboxEstado" runat="server" />
+                               
+               
+                    <div class="mb-3">
+                        <label for="txtPrecio" class="form-label">Precio</label>
+                        <asp:TextBox runat="server" ID="txtPrecio" CssClass="form-control" />
 
-                <div class="mb-3">
-                    <label for="txtPrecio" class="form-label">Precio</label>
-                    <asp:TextBox runat="server" ID="txtPrecio" CssClass="form-control" />
-                </div>
+                    </div>
+                    <columns>
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                            <ContentTemplate>
+                                <div class="mb-3">
+                                    <label for="txtImagenUrl" class="form-label">Imagen Url</label>
+                                    <asp:TextBox runat="server" ID="txtImagenUrl" CssClass="form-control" AutoPostBack="true" OnTextChanged="txtImagenUrl_TextChanged" />
+                                </div>
+                                <asp:Image ImageUrl="https://grupoact.com.ar/wp-content/uploads/2020/04/placeholder.png" runat="server" ID="imgArticulo" Width="60%" />
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
 
-                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-                    <ContentTemplate>
                         <div class="mb-3">
-                            <label for="txtImagenUrl" class="form-label">Imagen Url</label>
-                            <asp:TextBox runat="server" ID="txtImagenUrl" CssClass="form-control" AutoPostBack="true" OnTextChanged="txtImagenUrl_TextChanged" />
+                            <asp:Button Text="Aceptar" ID="btnAceptar" CssClass="btn btn-primary" OnClick="btnAceptar_Click" runat="server" />
+                            <a href="ProductosListaEdit.aspx" cssclass="btn btn-primary">Cancelar</a>
+                            <asp:Button Text="Inactivar" ID="btnInactivar" OnClick="btnInactivar_Click" CssClass="btn btn-warning" runat="server" />
                         </div>
-                        <asp:Image ImageUrl="https://grupoact.com.ar/wp-content/uploads/2020/04/placeholder.png" runat="server" ID="imgArticulo" Width="60%" />
-                    </ContentTemplate>
-                </asp:UpdatePanel>
-
-                <div class="mb-3">
-                    <asp:Button Text="Aceptar" ID="btnAceptar" CssClass="btn btn-primary" OnClick="btnAceptar_Click" runat="server" />
-                    <a href="ProductosListaEdit.aspx" cssclass="btn btn-primary">Cancelar</a>
-                    <%--<asp:Button Text="Inactivar" ID="btnInactivar" OnClick="btnInactivar_Click" CssClass="btn btn-warning" runat="server" />--%>
-                </div>
-
             </div>
 
         </div>
 
 
-         <div class="mb-3">
+        <div class="mb-3">
             <label for="ddlDescCategoria" class="form-label">Categoria: </label>
             <asp:DropDownList ID="ddlDescCategoria" CssClass="form-select" runat="server"></asp:DropDownList>
         </div>

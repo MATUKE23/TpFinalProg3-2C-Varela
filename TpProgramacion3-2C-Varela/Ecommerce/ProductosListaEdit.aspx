@@ -13,7 +13,7 @@
             <asp:BoundField HeaderText="Nombre de articulo" DataField="DESCRIPCION" />
             <asp:BoundField HeaderText="Descripcion Adicional" DataField="DESCRIPCION_AD" />
             <asp:BoundField HeaderText="Observacion" DataField="OBS" />
-            <asp:BoundField HeaderText="Estado" DataField="ESTADO" />
+            <asp:CheckBoxField HeaderText="Estado" DataField="ESTADO" />
             <asp:BoundField HeaderText="PRECIO" DataField="PRECIO" />
             <asp:CommandField HeaderText="Accion"  ShowSelectButton="true" SelectText="😵" />
             <%--agrego Emojo y boton--%>
