@@ -21,9 +21,9 @@ namespace Ecommerce
             dgvArticulos.DataSource = carrito;
             dgvArticulos.DataBind();
 
-            DbxFormaPago.Items.Add("EFECTIVO");
-            DbxFormaPago.Items.Add("TARJETA");
-            DbxFormaPago.Items.Add("TRANSFERENCIA");
+            //DbxFormaPago.Items.Add("EFECTIVO");
+            //DbxFormaPago.Items.Add("TARJETA");
+            //DbxFormaPago.Items.Add("TRANSFERENCIA");
 
             total = 0;
             foreach (Articulo aux in carrito)
@@ -37,7 +37,7 @@ namespace Ecommerce
 
         protected void EnviarPedido_click(object sender, EventArgs e)
         {
-            DetallePedidoNegocio negocio = new DetallePedidoNegocio();
+           /* DetallePedidoNegocio negocio = new DetallePedidoNegocio();
 
             Usuario auxUsuario = new Usuario();
             auxUsuario = (Usuario)Session["usuarioActual"];
@@ -61,7 +61,7 @@ namespace Ecommerce
 
             Response.Redirect("Default.aspx");
 
-
+            */
 
         }
     }

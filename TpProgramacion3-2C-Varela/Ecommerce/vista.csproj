@@ -107,7 +107,6 @@
   <ItemGroup>
     <Content Include="Administrar Pedidos.aspx" />
     <Content Include="Administrar Usuarios y Contraseñas.aspx" />
-    <Content Include="caja.aspx" />
     <Content Include="Carrito.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -200,13 +199,6 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="caja.aspx.cs">
-      <DependentUpon>caja.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="caja.aspx.designer.cs">
-      <DependentUpon>caja.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Carrito.aspx.cs">
       <DependentUpon>Carrito.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

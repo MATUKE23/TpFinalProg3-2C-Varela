@@ -18,12 +18,12 @@
                 <h4>Total: $ <%=total %></h4>
             </div>
             <div class="col-md-4">
-                <asp:DropDownList ID="DbxFormaPago" runat="server"></asp:DropDownList>
-                <asp:CheckBox ID="checkbxEnvio" runat="server" Text="¿Enviar a domicilio?"  />
+                <%--<asp:DropDownList ID="DbxFormaPago" runat="server"></asp:DropDownList>--%>
+                <%--<asp:CheckBox ID="checkbxEnvio" runat="server" Text="¿Enviar a domicilio?"  />--%>
 
             </div>
             <div>
-                <asp:Button ID="BtnEnviarPedido" Text="Enviar Pedido" CssClass="btn btn-success" runat="server" OnClick="EnviarPedido_click"/>
+                <%--<asp:Button ID="BtnEnviarPedido" Text="Enviar Pedido" CssClass="btn btn-success" runat="server" OnClick="EnviarPedido_click"/>--%>
             </div>
         </div>
     </div>
