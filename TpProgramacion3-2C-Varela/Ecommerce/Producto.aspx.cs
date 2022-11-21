@@ -13,19 +13,27 @@ namespace Ecommerce
     public partial class Producto : System.Web.UI.Page
     {
         public Articulo articulo { get; set; }
+        public Usuario usuarioActual { get; set; }
+
         protected void Page_Load(object sender, EventArgs e)
+
         {
-            int id = int.Parse(Request.QueryString["id"].ToString()); //guardo en una varible el ID que me traigo de la URL
+            usuarioActual = (Usuario)Session["usuarioActual"];
+
+
+            string id = Request.QueryString["id"] != null ? Request.QueryString["id"].ToString() : ""; //guardo en una varible el ID que me traigo de la URL
+            //int id = int.Parse(Request.QueryString["id"].ToString()); //guardo en una varible el ID que me traigo de la URL
             List<Articulo> lista = (List<Articulo>)Session["ListaArticulos"]; //crea una lista de articulos a partir de la session abierta
             foreach (Articulo arti in lista)
             {
-                if (arti.ID == id)
+                if (arti.ID == int.Parse(id))
                 {
                     articulo = arti; //asigno al obj  articulo lo que esta en la session y esta contiene la lista de articulos
 
                 }
 
             }
+
 
 
             if (articulo.CATEG.ID == 1)
@@ -39,7 +47,15 @@ namespace Ecommerce
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
+            if (usuarioActual.User == null)
+            {
+                Response.Redirect("Log in.aspx");
+
+            }
+
             agregar();
+
+
         }
 
         protected void btnIrAlCarritoClick(object sender, EventArgs e)

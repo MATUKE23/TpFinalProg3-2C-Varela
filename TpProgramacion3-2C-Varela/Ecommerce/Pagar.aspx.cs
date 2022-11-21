@@ -16,6 +16,18 @@ namespace Ecommerce
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
+
+            if (Session["usuario"] == null)
+            {
+                Session.Add("Error", "Para poder agregar productos al carrito primero debes loguearte");
+                Response.Redirect("Error0.aspx", false);
+            }
+
+
+
+
+
             carrito = (List<Articulo>)Session["carritoCompra"];
 
             dgvArticulos.DataSource = carrito;

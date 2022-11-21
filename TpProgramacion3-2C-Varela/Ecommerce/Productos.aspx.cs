@@ -16,9 +16,7 @@ namespace Ecommerce
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
             ListaArticulos = negocio.ListarSoloActivos();
-
-                  
-
+                              
            Session.Add("ListaArticulos", ListaArticulos);
           
             
