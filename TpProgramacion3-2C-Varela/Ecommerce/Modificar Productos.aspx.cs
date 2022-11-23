@@ -119,7 +119,7 @@ namespace Ecommerce
                 Response.Redirect("ProductosListaEdit.aspx", false);// me lleva a la pantalla del listado
 
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 Response.Redirect("Error0.aspx");
             }

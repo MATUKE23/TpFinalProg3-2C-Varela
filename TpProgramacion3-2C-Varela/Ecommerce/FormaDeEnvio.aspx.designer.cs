@@ -11,151 +11,106 @@ namespace Ecommerce
 {
 
 
-    public partial class DatosCliente
+    public partial class FormaDeEnvio
     {
 
         /// <summary>
-        /// Nombre control.
+        /// ddlFormadeEnvio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Nombre;
+        protected global::System.Web.UI.WebControls.DropDownList ddlFormadeEnvio;
 
         /// <summary>
-        /// DNI control.
+        /// SolicitaFactura control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DNI;
+        protected global::System.Web.UI.WebControls.Label SolicitaFactura;
 
         /// <summary>
-        /// Telefono1 control.
+        /// txtSI control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Telefono1;
+        protected global::System.Web.UI.WebControls.Button txtSI;
 
         /// <summary>
-        /// FechaNac control.
+        /// NO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FechaNac;
+        protected global::System.Web.UI.WebControls.Button NO;
 
         /// <summary>
-        /// Calle control.
+        /// lbCondFiscal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Calle;
+        protected global::System.Web.UI.WebControls.Label lbCondFiscal;
 
         /// <summary>
-        /// EntreCalles control.
+        /// ddlCondFiscal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EntreCalles;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCondFiscal;
 
         /// <summary>
-        /// ddlProvincia control.
+        /// lbCUIT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlProvincia;
+        protected global::System.Web.UI.WebControls.Label lbCUIT;
 
         /// <summary>
-        /// ddlProvincias control.
+        /// txtCUIT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlProvincias;
+        protected global::System.Web.UI.WebControls.TextBox txtCUIT;
 
         /// <summary>
-        /// NroDepto control.
+        /// lbFormaDePago control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NroDepto;
+        protected global::System.Web.UI.WebControls.Label lbFormaDePago;
 
         /// <summary>
-        /// Obs control.
+        /// ddlFormaDePago control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Obs;
+        protected global::System.Web.UI.WebControls.DropDownList ddlFormaDePago;
 
         /// <summary>
-        /// Apellido control.
+        /// btnHacerPedido control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Apellido;
-
-        /// <summary>
-        /// Telefono2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Telefono2;
-
-        /// <summary>
-        /// Numero control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Numero;
-
-        /// <summary>
-        /// ddlPartido control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPartido;
-
-        /// <summary>
-        /// CodigoPostal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CodigoPostal;
-
-        /// <summary>
-        /// Piso control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Piso;
+        protected global::System.Web.UI.WebControls.Button btnHacerPedido;
     }
 }
