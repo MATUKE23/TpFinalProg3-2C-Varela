@@ -4,7 +4,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>Ingresar los siguientes datos:</h2>
+    <h2> Primero debes ingresar los siguientes datos:</h2>
 
     <div class="row g-3">
         <div class="col-md-6">
@@ -78,7 +78,7 @@
     </div>
 
      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Agregar</button>
+         <asp:Button Text="Hacer Pedido" ID="BTNHacerPedido" class="btn btn-primary" OnClick="BTNHacerPedido_Click" runat="server" />
     </div>
 
 </asp:Content>

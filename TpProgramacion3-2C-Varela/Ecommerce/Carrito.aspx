@@ -31,9 +31,12 @@
                                     <td><%=arti.CANTIDAD %></td>
                                     <td><%=arti.PRECIO * arti.CANTIDAD %></td>
                                     <td>
-                                        <a href="Carrito.aspx?contador=<%=count%>&accion=agregar" title="Agregar una cantidad" class="btn btn-dark"><i class="fa-solid fa-plus"></i></a>
-                                        <a href="Carrito.aspx?contador=<%=count%>&accion=quitar" title="Quitar una cantidad" class="btn btn-dark"><i class="fa-solid fa-minus"></i></a>
-                                        <a href="Carrito.aspx?contador=<%=count%>&accion=quitarTodo" title="Quitar todo" class="btn btn-dark"><i class="fa-solid fa-trash"></i></a>
+                                        <a href="Carrito.aspx?contador=<%=count%>&accion=agregar" title="Agregar una cantidad" 
+                                            class="btn btn-dark"><i class="fa-solid fa-plus"></i></a>
+                                        <a href="Carrito.aspx?contador=<%=count%>&accion=quitar" title="Quitar una cantidad" 
+                                            class="btn btn-dark"><i class="fa-solid fa-minus"></i></a>
+                                        <a href="Carrito.aspx?contador=<%=count%>&accion=quitarTodo" title="Quitar todo" 
+                                            class="btn btn-dark"><i class="fa-solid fa-trash"></i></a>
                                     </td>
                                 </tr>
                                 <% count++;
@@ -43,13 +46,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+            </div>
+     
         <div class="card text-right">
             <div class="card-header">
                <h5>TOTAL: $ <%=total %></h5>  
             </div>
             <div class="card-body">
-                <asp:Button ID="Button1" runat="server" ToolTip="Ir a Pagar" Text="Hacer Pedido" CssClass="btn btn-success" OnClick="Pagar" />
+                <asp:Button ID="Button1" runat="server" ToolTip="Ir a Pagar" Text="Hacer Pedido" CssClass="btn btn-success" OnClick="HacerPedido" />
                 <asp:Button ID="Button2" runat="server" ToolTip="Vaciar carrito" Text="Vaciar" CssClass="btn btn-danger" OnClick="VaciarCarrito" />
             </div>
         </div>
@@ -57,7 +62,7 @@
             <div class="col-lg-1 mb-2">
                 
             <div class="col-lg-1 mb-2">
-                
+                </div>
         </div>
         <%}
             else

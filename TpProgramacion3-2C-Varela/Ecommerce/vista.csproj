@@ -105,7 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Administrar Pedidos.aspx" />
+    <Content Include="PedidosVistaAdmin.aspx" />
     <Content Include="Administrar Usuarios y Contraseñas.aspx" />
     <Content Include="Carrito.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -121,7 +121,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Favoritos.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="FormaDeEnvio.aspx" />
+    <Content Include="FormaDeEnvioPagoFactura.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -143,7 +143,7 @@
     <Content Include="Modificar Quienes Somos.aspx" />
     <Content Include="Ofertas.aspx" />
     <Content Include="Pagar.aspx" />
-    <Content Include="PedidosCliente.aspx" />
+    <Content Include="PedidosVistaCliente.aspx" />
     <Content Include="Producto.aspx" />
     <Content Include="Productos.aspx" />
     <Content Include="ProductosListaEdit.aspx" />
@@ -184,12 +184,12 @@
     <Content Include="Site1.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrar Pedidos.aspx.cs">
-      <DependentUpon>Administrar Pedidos.aspx</DependentUpon>
+    <Compile Include="PedidosVistaAdmin.aspx.cs">
+      <DependentUpon>PedidosVistaAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administrar Pedidos.aspx.designer.cs">
-      <DependentUpon>Administrar Pedidos.aspx</DependentUpon>
+    <Compile Include="PedidosVistaAdmin.aspx.designer.cs">
+      <DependentUpon>PedidosVistaAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administrar Usuarios y Contraseñas.aspx.cs">
       <DependentUpon>Administrar Usuarios y Contraseñas.aspx</DependentUpon>
@@ -235,12 +235,12 @@
     <Compile Include="Favoritos.aspx.designer.cs">
       <DependentUpon>Favoritos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FormaDeEnvio.aspx.cs">
-      <DependentUpon>FormaDeEnvio.aspx</DependentUpon>
+    <Compile Include="FormaDeEnvioPagoFactura.aspx.cs">
+      <DependentUpon>FormaDeEnvioPagoFactura.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FormaDeEnvio.aspx.designer.cs">
-      <DependentUpon>FormaDeEnvio.aspx</DependentUpon>
+    <Compile Include="FormaDeEnvioPagoFactura.aspx.designer.cs">
+      <DependentUpon>FormaDeEnvioPagoFactura.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -315,12 +315,12 @@
     <Compile Include="Pagar.aspx.designer.cs">
       <DependentUpon>Pagar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PedidosCliente.aspx.cs">
-      <DependentUpon>PedidosCliente.aspx</DependentUpon>
+    <Compile Include="PedidosVistaCliente.aspx.cs">
+      <DependentUpon>PedidosVistaCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PedidosCliente.aspx.designer.cs">
-      <DependentUpon>PedidosCliente.aspx</DependentUpon>
+    <Compile Include="PedidosVistaCliente.aspx.designer.cs">
+      <DependentUpon>PedidosVistaCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Producto.aspx.cs">
       <DependentUpon>Producto.aspx</DependentUpon>

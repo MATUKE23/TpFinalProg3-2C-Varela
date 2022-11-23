@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="FormaDeEnvio.aspx.cs" Inherits="Ecommerce.FormaDeEnvio" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="FormaDeEnvioPagoFactura.aspx.cs" Inherits="Ecommerce.FormaDeEnvio" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -47,7 +47,7 @@
                 </asp:DropDownList>
 
                 <br />
-                <asp:Button ID="btnHacerPedido" Text="Hacer Pedido" CssClass="btn btn-primary" runat="server" />
+                <asp:Button ID="btnHacerPedido" Text="Realizar Pedido" CssClass="btn btn-primary" runat="server" />
 
 
 

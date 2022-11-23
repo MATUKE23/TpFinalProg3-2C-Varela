@@ -70,9 +70,9 @@ namespace Ecommerce
             Response.Redirect("Carrito.aspx");
         }
 
-        protected void Pagar(object sender, EventArgs e)
+        protected void HacerPedido(object sender, EventArgs e)
         {
-            Response.Redirect("Pagar.aspx");
+            Response.Redirect("DatosCliente.aspx");
         }
 
 

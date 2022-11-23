@@ -13,5 +13,10 @@ namespace Ecommerce
         {
 
         }
+
+        protected void BTNHacerPedido_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FormaDeEnvioPagoFactura.aspx");
+        }
     }
 }
