@@ -33,7 +33,7 @@ namespace Ecommerce
                 Session.Add("usuarioActual", usuarioActual);
             }
 
-            if (usuarioActual.TipoUsuario == TipoUsuario.Admin)
+            if (usuarioActual.TipoUsuario == TipoUsuario.Admin) // si el tipo de admin entonces accedo al entorno masterpage2
             {
                 Response.Redirect("DefaultAdmin.aspx");
             }

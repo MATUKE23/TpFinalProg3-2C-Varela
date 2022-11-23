@@ -19,7 +19,7 @@
     <form id="form1" runat="server">
         <div>
             <nav class="navbar navbar-expand-lg">
-      
+
 
                 <a class="navbar-brand " href="DefaultAdmin.aspx">El sueño de Amelie</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +32,13 @@
                             <a class="nav-link" href="ProductosListaEdit.aspx">Modificar Productos</a>
                         </li>
 
-                  
                         <li class="nav-item active mx-5">
                             <a class="nav-link" href="Modificar Ofertas.aspx">Modificar Ofertas</a>
                         </li>
                         <li class="nav-item active mx-5">
                             <a class="nav-link" href="Main Admin.aspx">Modificar Otros</a>
                         </li>
+
                         <li class="nav-item active mx-5">
                             <a class="nav-link" href="Administrar Pedidos.aspx">Administrar Pedidos</a>
                         </li>
@@ -47,7 +47,6 @@
                             <a class="nav-link" href="Administrar Usuarios y Contraseñas.aspx">Administrar Usuarios y Contraseñas</a>
                         </li>
 
-
                         <li class="nav-item active mx-5">
                             <asp:LinkButton ID="LinkButton1" runat="server" CssClass="nav-link" OnClick="Desloguear">Logout</asp:LinkButton>
                         </li>
@@ -55,7 +54,7 @@
                     </ul>
                 </div>
 
-            
+
             </nav>
 
             <div class="nombre">

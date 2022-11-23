@@ -18,6 +18,15 @@ namespace Ecommerce
                 Session.Add("error", "No tienes permisos para ingresar a esta pantalla. Necesitas nivel admin.");
                 Response.Redirect("Error0.aspx", false);
             }
+
+            //if (!(Session["usuarioActual"] == null ))
+            //{
+            //    Session.Add("error", "No tienes permisos para ingresar a esta pantalla. Necesitas nivel admin.");
+            //    Response.Redirect("Error0.aspx", false);
+            //}
+
+
+
         }
 
         public Usuario usuarioActual { get; set; }

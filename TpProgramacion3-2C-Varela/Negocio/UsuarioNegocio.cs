@@ -46,7 +46,7 @@ namespace Negocio
                       
         }
 
-        public void AltaUsuarioSP(Usuario nuevo)
+        public void AltaUsuarioSP(Usuario nuevo) //SOLO DA DE ALTA USUARIO NO ADMIN
         {
             AccesoaDatos datos = new AccesoaDatos();
 
