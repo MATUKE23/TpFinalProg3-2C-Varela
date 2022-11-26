@@ -14,18 +14,7 @@ namespace Ecommerce
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            /* Usuario usuario = new Usuario();
-            usuario = (Usuario)(Session["usuarioActual"]);
-            if (usuario.TipoUsuario != TipoUsuario.Null) //verifica que este logueado para acceder y evita saltear el control editando el URL
-            {
-                Session.Add("Error", "Primero debes loguearte antes de ingresar");
-                Response.Redirect("Error0.aspx", false);
-            }
-
-            */
-
-
-
+            
         }
 
         protected void btnIniciarSesion_Click(object sender, EventArgs e)
@@ -37,22 +26,11 @@ namespace Ecommerce
             {
                 usuario = new Usuario(TextBoxLogIn.Text, TextBoxLogInPassword.Text, false); //asigno a objeto usuario los datos cargados en txtbox
                 if (negocio.Loguear(usuario))//valida el logueo en con la base
-                {//redirigo a la pantalla de logueo 
+                {
                   
                     Session.Add("usuarioActual", usuario);//agrego al usuario al session
-                    Response.Redirect("Default.aspx",false);
-                    /*
-                    string script = @"<script type='text/javascript'>  alert('Se ha presionado el boton: 7');         </script>";
+                    Response.Redirect("Default.aspx",false);//redirigo a la pantalla de inicial 
 
-                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
-                   
-                    usuario = (Usuario)(Session["usuarioActual"]);
-                    btnIniciarSesion.Attributes["onclick"] = "alert('Bienvenido Usuario'+ usuario); return false;";
-
-                    
-                    string msg = "hola";
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert ('"+msg+"');",true);
-                    */
                 }
                 else
                      {//sino error y redirigo a pagina de error.

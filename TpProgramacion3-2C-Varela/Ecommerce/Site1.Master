@@ -60,6 +60,12 @@
                             <a class="nav-link" href="PedidosVistaCliente.aspx">Mis Pedidos <i class="fa-solid fa-sheet-plastic"></i></a>
                         </li>
 
+                        
+                        <li class="nav-item active mx-4">
+                            <a class="nav-link" href="DatosCliente.aspx?id=<%:usuarioActual.IDUSUARIO%>">Mis Datos <i class="fa-solid fa-sheet-plastic"></i></a>
+                        </li>
+                        
+
                         <%} %>
                         <%if (usuarioActual.TipoUsuario == Dominio.TipoUsuario.Null)
                             {%>

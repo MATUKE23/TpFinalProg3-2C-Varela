@@ -9,6 +9,7 @@
     <div class="row g-3">
         <div class="col-md-6">
             <div class="col">
+              
                 <label for="Nombres" class="form-label">Nombre/s:</label>
                 <asp:TextBox runat="server" ID="Nombre" placeholder="Juan Jose" CssClass="form-control" />
                 <br />

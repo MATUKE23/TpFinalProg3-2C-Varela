@@ -11,6 +11,7 @@
         <Columns>
              <asp:BoundField HeaderText="Codigo de articulo" DataField="CODIGO" />
             <asp:BoundField HeaderText="Nombre de articulo" DataField="DESCRIPCION" />
+            <asp:BoundField HeaderText="Tipo de Articulo" DataField="CATEG.DESCRIPCION" />
             <asp:BoundField HeaderText="Descripcion Adicional" DataField="DESCRIPCION_AD" />
             <asp:BoundField HeaderText="Observacion" DataField="OBS" />
             <asp:CheckBoxField HeaderText="Estado" DataField="ESTADO" />

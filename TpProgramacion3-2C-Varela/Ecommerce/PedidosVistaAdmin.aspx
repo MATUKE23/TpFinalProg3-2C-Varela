@@ -12,6 +12,7 @@
         <%--agrego paginacion y tope de paginas a la lista--%>
         <Columns>
             <asp:BoundField HeaderText="Fecha de venta" DataField="FECHAVENTA" />
+            <asp:BoundField HeaderText="E-mail" DataField="USUARIO" />
             <asp:BoundField HeaderText="Codigo de articulo" DataField="CODIGO" />
             <asp:BoundField HeaderText="Nombre de articulo" DataField="DESCRIPCION" />
             <asp:BoundField HeaderText="Nombre del cliente" DataField="NOMBRES" />
