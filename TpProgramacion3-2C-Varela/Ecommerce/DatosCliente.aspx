@@ -4,12 +4,12 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2> Primero debes ingresar los siguientes datos:</h2>
+    <h2>Primero debes ingresar los siguientes datos:</h2>
 
     <div class="row g-3">
         <div class="col-md-6">
             <div class="col">
-              
+
                 <label for="Nombres" class="form-label">Nombre/s:</label>
                 <asp:TextBox runat="server" ID="Nombre" placeholder="Juan Jose" CssClass="form-control" />
                 <br />
@@ -29,16 +29,15 @@
                 <asp:TextBox runat="server" ID="EntreCalles" CssClass="form-control" placeholder="Alvear y Francia" />
                 <br />
                 <label for="Provincia" class="form-label">Provincia:</label>
-                <asp:DropDownList ID="ddlProvincia" CssClass="form-control" runat="server"></asp:DropDownList>
+                <asp:TextBox ID="Provincia" runat="server" CssClass="form-control" placeholder="Bs.As." />
                 <br />
                 <label for="Localidad" class="form-label">Localidad:</label>
-                <asp:DropDownList ID="ddlProvincias" CssClass="form-control" runat="server"></asp:DropDownList>
-
+                <asp:TextBox ID="Localidad" runat="server" CssClass="form-control" placeholder="Garin" />
                 <br />
                 <label for="NroDepto" class="form-label">Numero de Departamento:</label>
                 <asp:TextBox runat="server" ID="NroDepto" CssClass="form-control" placeholder="2" />
                 <br />
-                     <label for="Obs" class="form-label">Observaciones:</label>
+                <label for="Obs" class="form-label">Observaciones:</label>
                 <asp:TextBox runat="server" ID="Obs" CssClass="form-control" placeholder="Casa color rojo y porton negro." />
             </div>
         </div>
@@ -67,7 +66,7 @@
                 <br />
                 <br />
                 <label for="Partido" class="form-label">Partido:</label>
-                <asp:DropDownList ID="ddlPartido" CssClass="form-control" runat="server"></asp:DropDownList>
+                <asp:TextBox ID="Partido" runat="server" CssClass="form-control" placeholder="Escobar" />
                 <br />
                 <label for="CodigoPostal" class="form-label">Codigo Postal:</label>
                 <asp:TextBox runat="server" ID="CodigoPostal" CssClass="form-control" placeholder="1652" />
@@ -78,8 +77,8 @@
         </div>
     </div>
 
-     <div class="col-12">
-         <asp:Button Text="Hacer Pedido" ID="BTNHacerPedido" class="btn btn-primary" OnClick="BTNHacerPedido_Click" runat="server" />
+    <div class="col-12">
+        <asp:Button Text="Hacer Pedido" ID="BTNHacerPedido" class="btn btn-primary" OnClick="BTNHacerPedido_Click" runat="server" />
     </div>
 
 </asp:Content>

@@ -13,30 +13,34 @@ namespace Dominio
         public int IDDOMICILIO { get; set; }
 
         [DisplayName("Calle")]
-        public int CALLE { get; set; }
+        public string CALLE { get; set; }
 
         [DisplayName("Numero")]
         public int NUMERO { get; set; }
+
+        [DisplayName("Entre Calles")]
+        public string ENTRECALLES { get; set; }
+
 
         [DisplayName("Codigo Postal")]
         public int CODIGO_POSTAL { get; set; }
 
         [DisplayName("Provincia")]
-        public int PROVINCIA { get; set; }
+        public string PROVINCIA { get; set; }
 
         [DisplayName("Partido")]
-        public int PARTIDO { get; set; }
+        public string PARTIDO { get; set; }
 
         [DisplayName("Localidad")]
-        public int LOCALIDAD { get; set; }
+        public string LOCALIDAD { get; set; }
 
         [DisplayName("Numero de Departamento")]
-        public int NUMERO_DEPTO { get; set; }
+        public string NUMERO_DEPTO { get; set; }
 
         [DisplayName("PISO")]
-        public int PISO { get; set; }
+        public string PISO { get; set; }
 
         [DisplayName("Observaciones")]
-        public int OBSERVACIONES { get; set; }
+        public string OBSERVACIONES { get; set; }
     }
 }

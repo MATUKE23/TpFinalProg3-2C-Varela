@@ -36,6 +36,16 @@ namespace Ecommerce
                 //FechaNac.Text = seleccionado.FECHA_NACIMIENTO.ToString();
                 FechaNac.Text = seleccionado.FECHA_NACIMIENTO.Date.ToString("mm-dd-yyyy");
                 Telefono2.Text = seleccionado.TELEFONO_2;
+                Calle.Text = seleccionado.DOMICILIO.CALLE;
+                EntreCalles.Text = seleccionado.DOMICILIO.ENTRECALLES;
+                CodigoPostal.Text = seleccionado.DOMICILIO.CODIGO_POSTAL.ToString();
+                Provincia.Text = seleccionado.DOMICILIO.PROVINCIA;
+                Partido.Text = seleccionado.DOMICILIO.PARTIDO;
+                Localidad.Text = seleccionado.DOMICILIO.LOCALIDAD;
+                NroDepto.Text = seleccionado.DOMICILIO.NUMERO_DEPTO;
+                Piso.Text = seleccionado.DOMICILIO.PISO;
+                Obs.Text = seleccionado.DOMICILIO.OBSERVACIONES;
+
 
 
                 //guardo CLiente seleccionado en session

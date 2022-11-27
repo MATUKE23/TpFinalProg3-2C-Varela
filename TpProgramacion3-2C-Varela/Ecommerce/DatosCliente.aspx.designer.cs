@@ -69,22 +69,22 @@ namespace Ecommerce
         protected global::System.Web.UI.WebControls.TextBox EntreCalles;
 
         /// <summary>
-        /// ddlProvincia control.
+        /// Provincia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlProvincia;
+        protected global::System.Web.UI.WebControls.TextBox Provincia;
 
         /// <summary>
-        /// ddlProvincias control.
+        /// Localidad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlProvincias;
+        protected global::System.Web.UI.WebControls.TextBox Localidad;
 
         /// <summary>
         /// NroDepto control.
@@ -132,13 +132,13 @@ namespace Ecommerce
         protected global::System.Web.UI.WebControls.TextBox Numero;
 
         /// <summary>
-        /// ddlPartido control.
+        /// Partido control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPartido;
+        protected global::System.Web.UI.WebControls.TextBox Partido;
 
         /// <summary>
         /// CodigoPostal control.
