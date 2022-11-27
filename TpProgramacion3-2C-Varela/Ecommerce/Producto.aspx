@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="imagen col-lg-6">
-                <img src="<%=articulo.URLIMAGEN%>" alt="Imagen" width="90%" height="90%" />
+                <img src="<%=articulo.URLIMAGEN%>" alt="Imagen" width="440" height="550" />
             </div>
             <div class="detalle col-lg-6">
                 <h3><%=articulo.DESCRIPCION%></h3>

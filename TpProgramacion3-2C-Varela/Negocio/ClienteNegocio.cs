@@ -10,7 +10,7 @@ namespace Negocio
 {
     public class ClienteNegocio
     {
-        public List<Cliente> ListarCliente(int id)
+        public List<Cliente> ListarCliente(string id)
         {
             List<Cliente> lista = new List<Cliente>();
             SqlConnection conexion = new SqlConnection();
@@ -39,8 +39,10 @@ namespace Negocio
                     aux.DNI = (int)lector["DNI"];
                     aux.TELEFONO_1 = (string)lector["Telefono_1"];
                     aux.TELEFONO_2 = (string)lector["Telefono_2"];
-                    aux.FECHA_NACIMIENTO = (string)lector["Fecha_Nacimiento"];// si paso a tipo de dato fecha, primero hacerlo en la propiedad de la  clase cliente.
-                    
+                    //aux.FECHA_NACIMIENTO = (string)lector["Fecha_Nacimiento"];// si paso a tipo de dato fecha, primero hacerlo en la propiedad de la  clase cliente.
+                    aux.FECHA_NACIMIENTO = (DateTime)lector["Fecha_Nacimiento"];
+                    //aux.FECHA_NACIMIENTO = DateTime.Parselector["Fecha_Nacimiento"];// si paso a tipo de dato fecha, primero hacerlo en la propiedad de la  clase cliente.
+                    aux.ESTADO = (bool)lector["ESTADO"];
 
 
                     /*Articulo aux = new Articulo();

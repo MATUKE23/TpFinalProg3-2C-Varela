@@ -24,6 +24,8 @@ namespace Dominio
 
         public int IDUSUARIO { get; set; }
 
+        public Cliente CLIENT { get; set; }
+
         public TipoUsuario TipoUsuario { get; set; }
 
         public Usuario(string user, string pass, bool admin) //constructor, si la instancia es de tipo admin que guarda un 1 o un 2

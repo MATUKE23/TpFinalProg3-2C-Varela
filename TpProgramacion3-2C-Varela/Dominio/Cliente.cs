@@ -30,14 +30,16 @@ namespace Dominio
 
         [DisplayName("Fecha de Nacimiento")]
         
-        public string FECHA_NACIMIENTO { get; set; }
+        public DateTime FECHA_NACIMIENTO { get; set; }
 
         [DisplayName("Estado")]
-        public string ESTADO { get; set; }
+        public bool ESTADO { get; set; }
 
 
         [DisplayName("Id del Cliente")]
         public int IDCLIENTE { get; set; }
+
+        public Domicilio DOMICILIO { get; set; }
 
 
     }
