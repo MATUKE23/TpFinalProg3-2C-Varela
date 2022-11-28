@@ -10,10 +10,13 @@ using Negocio;
 
 namespace Ecommerce
 {
+   
     public partial class Carrito : System.Web.UI.Page
     {
         public List<Articulo> carrito { get; set; }
         public decimal total { get; set; }
+
+        public Usuario xxx { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -72,7 +75,11 @@ namespace Ecommerce
 
         protected void HacerPedido(object sender, EventArgs e)
         {
-            Response.Redirect("DatosCliente.aspx");
+
+           xxx  = (Usuario)Session["usuarioActual"];
+            string id = Convert.ToString(xxx.IDUSUARIO);
+                
+            Response.Redirect("DatosCliente.aspx?id=" + id); // redirijo a datoscliente con el Id 
         }
 
 

@@ -54,7 +54,7 @@
                <h5>TOTAL: $ <%=total %></h5>  
             </div>
             <div class="card-body">
-                <asp:Button ID="Button1" runat="server" ToolTip="Ir a Pagar" Text="Hacer Pedido" CssClass="btn btn-success" OnClick="HacerPedido" />
+                <asp:Button ID="Button1" runat="server" ToolTip="HacerPedido" Text="Hacer Pedido" CssClass="btn btn-success" OnClick="HacerPedido" />
                 <asp:Button ID="Button2" runat="server" ToolTip="Vaciar carrito" Text="Vaciar" CssClass="btn btn-danger" OnClick="VaciarCarrito" />
             </div>
         </div>

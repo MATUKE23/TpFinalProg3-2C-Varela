@@ -21,7 +21,7 @@ namespace Negocio
             {
                 conexion.ConnectionString = "server=.\\SQLEXPRESS; database=ECOMMERCE; integrated security=true";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "select Cl.IdCliente, Cl.Nombres, CL.Apellidos, Cl.DNI, Cl.Telefono_1, Cl.Telefono_2, CL.Fecha_Nacimiento, CL.Estado, Do.Calle, Do.ENTRE_CALLES, Do.CODIGO_POSTAL, Do.PROVINCIA, Do.PARTIDO, Do.LOCALIDAD, Do.NUMERO_DEPTO, Do.PISO, Do.OBSERVACIONES from Clientes as Cl, DOMICILIOS as Do, Usuarios1 as U where Cl.idcliente = U.IDUSUARIO and U.IDUSUARIO =4 and Do.IDDOMICILIO = U.IDUSUARIO";
+                comando.CommandText = "select Cl.IdCliente, Cl.Nombres, CL.Apellidos, Cl.DNI, Cl.Telefono_1, Cl.Telefono_2, CL.Fecha_Nacimiento, CL.Estado, Do.Calle, Do.ENTRE_CALLES, Do.CODIGO_POSTAL, Do.PROVINCIA, Do.PARTIDO, Do.LOCALIDAD, Do.NUMERO_DEPTO, Do.PISO, Do.OBSERVACIONES from Clientes as Cl, DOMICILIOS as Do, Usuarios1 as U where Cl.idcliente = U.IDUSUARIO and Do.IDDOMICILIO = U.IDUSUARIO";
                 //comando.CommandText = "select Cl.IdCliente, Cl.Nombres, CL.Apellidos, Cl.DNI, Cl.Telefono_1, Cl.Telefono_2, CL.Fecha_Nacimiento, CL.Estado from Clientes as Cl, Usuarios1 as U where Cl.idcliente = U.IDUSUARIO";
                 //if (id != null)
                 comando.CommandText += " and U.IDUSUARIO = " + id;
@@ -55,28 +55,53 @@ namespace Negocio
                     //aux.FECHA_NACIMIENTO = DateTime.Parselector["Fecha_Nacimiento"];// si paso a tipo de dato fecha, primero hacerlo en la propiedad de la  clase cliente.
 
 
-                    /*Articulo aux = new Articulo();
-                    aux.ID = (int)lector["ID"];
-                    aux.CODIGO = (string)lector["CODIGO"]; //entre comillas es el el nombre que tiene en la base
-                    aux.DESCRIPCION = (string)lector["DART"];
-                    aux.DESCRIPCION_AD = (string)lector["DART_AD"];
-                    aux.PRECIO = decimal.Parse(lector["PRECIO"].ToString());
-                    aux.TIPO = (string)lector["TIPO"];
-                    aux.OBS = (string)lector["OBS"];
-                    aux.ESTADO = (bool)lector["ESTADO"];
-
-                    aux.CATEG = new Categoria();
-                    aux.CATEG.ID = (int)lector["IDCATEGORIA"];
-                    aux.CATEG.DESCRIPCION = (string)lector["DESC_CAT"];
-                    aux.URLIMAGEN = (string)lector["URLIMAGEN"];
-                    */
-
                     lista.Add(aux);
 
                 }
 
                 conexion.Close();
                 return lista;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+        } // 1
+
+
+
+        public int ValidaDatosClienteCompletos(string id)
+        {
+
+            SqlConnection conexion = new SqlConnection();
+            SqlCommand comando = new SqlCommand();
+            SqlDataReader lector;
+
+            try
+            {
+                conexion.ConnectionString = "server=.\\SQLEXPRESS; database=ECOMMERCE; integrated security=true";
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = "select count(IDDOMICILIO) as 'Acum' from Clientes as Cl, DOMICILIOS as Do, Usuarios1 as U where Cl.idcliente = U.IDUSUARIO and Do.IDDOMICILIO = U.IDUSUARIO and Cl.Nombres is not null and Cl.Apellidos is not null and Cl.DNI is not null and Cl.Telefono_1 is not null and cl.Fecha_Nacimiento is not null and Do.CALLE is not null and Do.ENTRE_CALLES is not null and Do.CODIGO_POSTAL is not null and Do.PROVINCIA is not null and Do.PARTIDO is not null and Do.LOCALIDAD is not null ";
+                comando.CommandText += " and U.IDUSUARIO = " + id;
+                comando.CommandText += "group by IDDOMICILIO";
+                comando.Connection = conexion;
+
+                int validador = 0;
+
+                conexion.Open();
+                lector = comando.ExecuteReader();
+
+                while (lector.Read())
+                {
+                    validador = (int)lector["Acum"];
+
+                }
+
+                conexion.Close();
+                return validador;
             }
             catch (Exception ex)
             {
