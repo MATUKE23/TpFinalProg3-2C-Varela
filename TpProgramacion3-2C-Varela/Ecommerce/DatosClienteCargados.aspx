@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="DatosClienteCargados.aspx.cs" Inherits="Ecommerce.DatosClienteCargados" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -76,8 +77,7 @@
         </div>
     </div>
 
-    <%--<div class="col-12">
-        <asp:Button Text="Hacer Pedido" ID="BTNHacerPedido" class="btn btn-primary" OnClick="BTNHacerPedido_Click" runat="server" />
-    </div>--%>
-
+    <div class="col-12">
+        <asp:Button Text="Agregar o Modificar" ID="BTNHacerPedido" class="btn btn-primary" OnClick="AddModif" runat="server" />
+    </div>
 </asp:Content>
