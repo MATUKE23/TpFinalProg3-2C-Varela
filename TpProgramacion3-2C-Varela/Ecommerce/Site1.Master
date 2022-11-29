@@ -62,7 +62,7 @@
 
                         
                         <li class="nav-item active mx-4">
-                            <a class="nav-link" href="DatosCliente.aspx?id=<%:usuarioActual.IDUSUARIO%>">Mis Datos <i class="fa-solid fa-sheet-plastic"></i></a>
+                            <a class="nav-link" href="DatosClienteCargados.aspx?id=<%:usuarioActual.IDUSUARIO%>">Mis Datos <i class="fa-solid fa-sheet-plastic"></i></a>
                         </li>
                         
 

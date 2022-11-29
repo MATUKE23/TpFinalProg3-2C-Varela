@@ -9,21 +9,18 @@ using System.Web.UI.WebControls;
 
 namespace Ecommerce
 {
-    public partial class DatosCliente : System.Web.UI.Page
+    public partial class DatosClienteCargados : System.Web.UI.Page
     {
-        //public Cliente UsuarioActual { get; set; } // cuando me logueo el obj usuario se sube a la session
         protected void Page_Load(object sender, EventArgs e)
-
         {
-            ClienteNegocio negocio1 = new ClienteNegocio();// instancio un clientenegocio para invocar al metodo listar cliente
+            ClienteNegocio negocio1 = new ClienteNegocio();
 
-            string id = Request.QueryString["id"] != null ? Request.QueryString["id"].ToString() : ""; //guardo en una varible el ID que me traigo de la URL
-            if (negocio1.ValidaDatosClienteCompletos(id) != 1)//Valida si tiene los datos clave completos
+            string id = Request.QueryString["id"] != null ? Request.QueryString["id"].ToString() : "";
+            
+            if (negocio1.ValidaDatosClienteCompletos(id) == 1 & !IsPostBack)//Valida si tiene los datos clave completos
                                                               // si entras es porque faltan cargar datos clave 
             {
-                //string id = Request.QueryString["id"] != null ? Request.QueryString["id"].ToString() : ""; //guardo en una varible el ID que me traigo de la URL
-                if (!IsPostBack)
-                {
+                                              
                     ClienteNegocio negocio = new ClienteNegocio();// instancio un clientenegocio para invocar al metodo listar cliente
                                                                   //Cliente seleccionado = negocio.ListarCliente(id);
                     Cliente seleccionado = (negocio.ListarCliente(id))[0]; // le paso al metodo listar cliente el id de la session.
@@ -34,8 +31,8 @@ namespace Ecommerce
                     DNI.Text = seleccionado.DNI.ToString();
                     Apellido.Text = seleccionado.APELLIDOS;
                     Telefono1.Text = seleccionado.TELEFONO_1;
-                    //FechaNac.Text = seleccionado.FECHA_NACIMIENTO.ToString();
-                    FechaNac.Text = seleccionado.FECHA_NACIMIENTO.Date.ToString("mm-dd-yyyy");
+                    FechaNac.Text = seleccionado.FECHA_NACIMIENTO.ToString("dd-MM-yyyy");
+                    //FechaNac.Text = seleccionado.FECHA_NACIMIENTO.Date.ToString("mm-dd-yyyy");
                     Telefono2.Text = seleccionado.TELEFONO_2;
                     Calle.Text = seleccionado.DOMICILIO.CALLE;
                     EntreCalles.Text = seleccionado.DOMICILIO.ENTRECALLES;
@@ -51,24 +48,13 @@ namespace Ecommerce
 
                     //guardo CLiente seleccionado en session
 
-                }
+                
 
 
             }
 
-            else Response.Redirect("FormaDeEnvioPagoFactura.aspx");
-
-        }
-
-        //pre cargar todos los campos...
-
-        protected void BTNHacerPedido_Click(object sender, EventArgs e)
-        {
-
-            Response.Redirect("FormaDeEnvioPagoFactura.aspx");
         }
 
     }
-
 
 }

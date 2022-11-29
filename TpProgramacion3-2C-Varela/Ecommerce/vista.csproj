@@ -105,6 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DatosClienteCargados.aspx" />
     <Content Include="PedidosVistaAdmin.aspx" />
     <Content Include="Administrar Usuarios y Contraseñas.aspx" />
     <Content Include="Carrito.aspx" />
@@ -183,6 +184,13 @@
     <Content Include="Site1.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatosClienteCargados.aspx.cs">
+      <DependentUpon>DatosClienteCargados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatosClienteCargados.aspx.designer.cs">
+      <DependentUpon>DatosClienteCargados.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PedidosVistaAdmin.aspx.cs">
       <DependentUpon>PedidosVistaAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
