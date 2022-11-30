@@ -76,10 +76,10 @@ namespace Ecommerce
         protected void HacerPedido(object sender, EventArgs e)
         {
 
-           xxx  = (Usuario)Session["usuarioActual"];
+            xxx  = (Usuario)Session["usuarioActual"];
             string id = Convert.ToString(xxx.IDUSUARIO);
                 
-            Response.Redirect("DatosCliente.aspx?id=" + id); // redirijo a datoscliente con el Id 
+            Response.Redirect("DatosClienteCargados.aspx?id=" + id, false); // redirijo a datoscliente con el Id 
         }
 
 

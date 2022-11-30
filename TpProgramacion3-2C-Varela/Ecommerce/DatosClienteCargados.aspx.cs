@@ -11,11 +11,19 @@ namespace Ecommerce
 {
     public partial class DatosClienteCargados : System.Web.UI.Page
     {
+        public int validador { get; set; }  
         protected void Page_Load(object sender, EventArgs e)
         {
             ClienteNegocio negocio1 = new ClienteNegocio();
 
             string id = Request.QueryString["id"] != null ? Request.QueryString["id"].ToString() : "";
+
+            validador = negocio1.ValidaDatosClienteCompletos(id);
+
+            //Session["validador"] = negocio1.ValidaDatosClienteCompletos(id);
+
+           
+
 
             if (!IsPostBack & negocio1.ValidaDatosClienteCompletos(id) == 1)//Valida si tiene los datos clave completos
                                                                             // si entras es porque no falta cargar datos clave 
@@ -111,13 +119,15 @@ namespace Ecommerce
                     NuevoCliente.DOMICILIO.OBSERVACIONES = Obs.Text;
 
 
-
+              
                     negocio.ModificarDatosClienteConSP(NuevoCliente);
-                    Response.Redirect("Productos.aspx", false);
+                    Response.Redirect("DatosClienteCargados.aspx?id=" + id, false);
+
+
                 }
 
 
-                else
+                else //agrego nuevo cliente
 
                 {
 
@@ -142,17 +152,21 @@ namespace Ecommerce
                     NuevoCliente.DOMICILIO.PISO = Piso.Text;
                     NuevoCliente.DOMICILIO.OBSERVACIONES = Obs.Text;
 
-
                     negocio.AgregarDatosClienteConSP(NuevoCliente); //aca agrego el nuevo pokemon en la DB
-                    Response.Redirect("Datos clienteCargados.aspx", false);
+                    Response.Redirect("DatosClienteCargados.aspx?id=" + id, false);
                 }
 
             }
             catch (Exception ex)
             {
                 Session.Add("error", ex.ToString());
-                Response.Redirect("Error0.aspx");
+                Response.Redirect("Error0.aspx",false);
             }
+        }
+
+        protected void btneteHacerPedido_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FormaDeEnvioPagoFactura.aspx", false);
         }
     }
 

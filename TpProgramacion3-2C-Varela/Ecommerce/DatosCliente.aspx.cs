@@ -11,7 +11,6 @@ namespace Ecommerce
 {
     public partial class DatosCliente : System.Web.UI.Page
     {
-        //public Cliente UsuarioActual { get; set; } // cuando me logueo el obj usuario se sube a la session
         protected void Page_Load(object sender, EventArgs e)
 
         {
