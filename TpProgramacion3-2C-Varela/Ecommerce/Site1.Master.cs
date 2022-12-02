@@ -45,6 +45,7 @@ namespace Ecommerce
 
         protected void Desloguear(object sender, EventArgs e)
         {
+            carrito.Clear();
             usuarioActual = null;
             Session.Add("usuarioActual", usuarioActual);
             Response.Redirect("Default.aspx");

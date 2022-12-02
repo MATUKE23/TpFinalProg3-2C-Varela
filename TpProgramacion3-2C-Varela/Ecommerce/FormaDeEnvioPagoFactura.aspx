@@ -34,7 +34,7 @@
 
                 <br />
                 <asp:Label ID="lbCUIT" runat="server" Text="lbCondFiscal">Ingrese su numero de C.U.I.T.:</asp:Label>
-                <asp:TextBox ID="txtCUIT" runat="server" CssClass="form-control" placeholder="23-11111111-9" OnTextChanged="txtCUIT_TextChanged" />
+                <asp:TextBox ID="txtCUIT" runat="server" CssClass="form-control" placeholder="23-11111111-9" OnTextChanged="txtCUIT_TextChanged" AutoPostBack="true" />
                 <br />
                 
                 <asp:Label ID="lbFormaDePago" runat="server">Forma de pago:</asp:Label>
