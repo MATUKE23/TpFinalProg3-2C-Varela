@@ -78,7 +78,7 @@
     </div>
     <br />
     <div class="col-12">
-        <asp:Button Text="Agregar o Modificar" ID="BTNHacerPedido" class="btn btn-primary" OnClick="AddModif" runat="server" />
+        <asp:Button Text="Agregar o Modificar" ID="BtnAddModif" class="btn btn-primary" OnClick="AddModif" runat="server" />
         <%if (validador != 1) { %>
             <label  class="form-label">ingresar todos los datos clave correctamente:</label>
             <%} %>
@@ -92,7 +92,7 @@
            <% } %>
     </div>
 
->
+
 
 
 </asp:Content>

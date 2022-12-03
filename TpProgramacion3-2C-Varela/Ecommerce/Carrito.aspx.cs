@@ -14,6 +14,7 @@ namespace Ecommerce
     public partial class Carrito : System.Web.UI.Page
     {
         public List<Articulo> carrito { get; set; }
+                
         public decimal total { get; set; }
 
         public Usuario xxx { get; set; }

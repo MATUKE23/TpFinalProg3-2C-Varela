@@ -11,9 +11,30 @@ namespace Ecommerce
 {
     public partial class DatosClienteCargados : System.Web.UI.Page
     {
-        public int validador { get; set; }  
+        public int validador { get; set; }
+
+        public List<Articulo> carrito { get; set; }
+
+        public decimal total { get; set; }
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            carrito = (List<Articulo>)Session["carritoCompra"];
+
+            total = 0;
+            foreach (Articulo aux in carrito)
+            {
+                total += aux.CANTIDAD;
+            }
+
+
+            if (!IsPostBack && total == 0)
+            {
+                btneteHacerPedido.Visible = false;
+            }
+            else { btneteHacerPedido.Visible = true; }
+
             ClienteNegocio negocio1 = new ClienteNegocio();
 
             string id = Request.QueryString["id"] != null ? Request.QueryString["id"].ToString() : "";
@@ -54,9 +75,7 @@ namespace Ecommerce
 
 
 
-                //guardo CLiente seleccionado en session
-
-
+              
 
 
             }

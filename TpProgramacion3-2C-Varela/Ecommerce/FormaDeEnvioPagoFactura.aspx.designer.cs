@@ -33,22 +33,22 @@ namespace Ecommerce
         protected global::System.Web.UI.WebControls.Label SolicitaFactura;
 
         /// <summary>
-        /// txtSI control.
+        /// rdbSI control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button txtSI;
+        protected global::System.Web.UI.WebControls.RadioButton rdbSI;
 
         /// <summary>
-        /// NO control.
+        /// rdbNO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NO;
+        protected global::System.Web.UI.WebControls.RadioButton rdbNO;
 
         /// <summary>
         /// lbCondFiscal control.

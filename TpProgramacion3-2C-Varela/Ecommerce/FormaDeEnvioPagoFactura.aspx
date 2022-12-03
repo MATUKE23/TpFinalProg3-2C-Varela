@@ -9,7 +9,7 @@
         <div class="col-md-6">
             <div class="col">
 
-                <asp:DropDownList runat="server" ID="ddlFormadeEnvio" CssClass="form-control">
+                <asp:DropDownList runat="server" ID="ddlFormadeEnvio" CssClass="form-control" AutoPostBack="true" OnSelectedIndexChanged="ddlFormadeEnvio_SelectedIndexChanged">
                     <asp:ListItem Text="Retiro en el domicilio del vendedor" />
                     <asp:ListItem Text="Envio al domicilio registrado" />
                     <asp:ListItem Text="A coordinar. (Se pone en contacto con el vendedor)." />
@@ -18,8 +18,11 @@
                 <br />
                 <asp:Label ID="SolicitaFactura" runat="server" Text="Label">Solicita factura?</asp:Label>
 
-                <asp:Button Text="SI" ID="txtSI" CssClass="btn btn-primary" runat="server" OnClick="txtSI_Click" />
-                <asp:Button Text="NO" ID="NO" CssClass="btn btn-primary" runat="server" />
+
+                <asp:RadioButton ID="rdbSI" Text="SI" OnCheckedChanged="SI_CheckedChanged" runat="server" GroupName="Factura" AutoPostBack="true" />
+                <asp:RadioButton ID="rdbNO" Text="NO" OnCheckedChanged="NO_CheckedChanged" runat="server" GroupName="Factura" AutoPostBack="true" />
+                <%--<asp:Button Text="SI" ID="btnSi" CssClass="btn btn-primary" runat="server" OnClick="txtSI_Click" />
+                <asp:Button Text="NO" ID="btnNo" CssClass="btn btn-primary" runat="server" />--%>
                 <br />
                 <br />
 
@@ -36,9 +39,9 @@
                 <asp:Label ID="lbCUIT" runat="server" Text="lbCondFiscal">Ingrese su numero de C.U.I.T.:</asp:Label>
                 <asp:TextBox ID="txtCUIT" runat="server" CssClass="form-control" placeholder="23-11111111-9" OnTextChanged="txtCUIT_TextChanged" AutoPostBack="true" />
                 <br />
-                
+
                 <asp:Label ID="lbFormaDePago" runat="server">Forma de pago:</asp:Label>
-                <asp:DropDownList ID="ddlFormaDePago" CssClass="form-control" AutoPostBack="true" OnSelectedIndexChanged="ddlFormaDePago_SelectedIndexChanged" 
+                <asp:DropDownList ID="ddlFormaDePago" CssClass="form-control" AutoPostBack="true" OnSelectedIndexChanged="ddlFormaDePago_SelectedIndexChanged"
                     runat="server">
                     <asp:ListItem Text="Efectivo" />
                     <asp:ListItem Text="Transferencia Bancaria" />
