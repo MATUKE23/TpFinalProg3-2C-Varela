@@ -16,19 +16,21 @@ namespace Negocio
             try
             {
                 /*
+                  * @NROCOMPROBANTE BIGINT
                     @IDARTICULO INT,
                     @CANTIDAD INT,
                     @MONTO FLOAT
               
                 */
- 
+
                 datos.setearSP("AgregarCarritoCconSP");
 
-              
 
+                //datos.setearParametro("@NROCOMPROBANTE", NuevoCarrito.NROCOMPROBANTE);
                 datos.setearParametro("@IDARTICULO", NuevoCarrito.ARTICULO.ID);
                 datos.setearParametro("@CANTIDAD", NuevoCarrito.CANTIDAD);
                 datos.setearParametro("@MONTO", NuevoCarrito.MONTO);
+
 
                 datos.ejecutarAccion();
             }

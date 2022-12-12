@@ -13,11 +13,15 @@ namespace Ecommerce
 
     public partial class FormaDeEnvio : System.Web.UI.Page
     {
-    public List<Articulo> carrito { get; set; }
+        public List<Articulo> carrito { get; set; }
         public CarritoC nuevoCarritoC { get; set; }
 
+        public Usuario usuarioActual { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            usuarioActual = (Usuario)Session["usuarioActual"];
+
             if (!IsPostBack)
             {
                 lbCondFiscal.Visible = false;
@@ -107,18 +111,39 @@ namespace Ecommerce
             // bajar de la session DEL CARRITO un objeto articulo 
             // pasar el objeto articulo a un metodo agregarDetallePedido
             // Revisar tabla detalle pedido y crear SP
+           
+            DetallePedidoNegocio detallePedidoNegocio = new DetallePedidoNegocio();
+
+            DetallePedido nuevoDetallePedido = new DetallePedido();
+
+            nuevoDetallePedido.CLIENTE = new Cliente();
+            nuevoDetallePedido.CLIENTE.IDCLIENTE = usuarioActual.IDUSUARIO;
+            nuevoDetallePedido.FORMADEENVIO = ddlFormadeEnvio.SelectedValue;
+            nuevoDetallePedido.FACTURA = new Factura();
+            nuevoDetallePedido.FACTURA.PIDE = rdbSI.Checked;
+            nuevoDetallePedido.FACTURA.CONDICIONFISCAL = ddlCondFiscal.SelectedValue;
+            nuevoDetallePedido.FACTURA.NROCUIT = txtCUIT.ToString();
+            nuevoDetallePedido.FORMADEPAGO = ddlFormaDePago.SelectedValue;
+
+            detallePedidoNegocio.AgregarDetallePedidoConSP(nuevoDetallePedido);
+
+            
+
             CarritoC nuevoCarritoC = new CarritoC();
-            nuevoCarritoC.ARTICULO = new Articulo();
+            
+            
             CarritoCNegocio carritocNegocio = new CarritoCNegocio();
+
 
             carrito = (List<Articulo>)Session["carritoCompra"];
 
-            //xxx = (Usuario)Session["usuarioActual"];
-            //string id = Convert.ToString(xxx.IDUSUARIO);
+            //nuevoCarritoC.ARTICULO = new Articulo();
 
             foreach (Articulo aux in carrito)
 
-            {
+            { 
+                nuevoCarritoC.NROCOMPROBANTE = detallePedidoNegocio.ObtenerNroComprobante();
+
                 nuevoCarritoC.ARTICULO.ID = aux.ID;
 
                 nuevoCarritoC.CANTIDAD = aux.CANTIDAD;
@@ -127,13 +152,6 @@ namespace Ecommerce
 
             carritocNegocio.AgregarCarritoCconSP(nuevoCarritoC);
             }
-
-
-
-            //Articulo nuevo = new Articulo();  // lo instancio para poder llamar al metodo agregarConSP 
-            //ArticuloNegocio negocio = new ArticuloNegocio();//aca cargamos los datos del nuevo art 
-
-
 
         }
     }
