@@ -18,7 +18,7 @@ namespace Ecommerce
         protected void Page_Load(object sender, EventArgs e)
         {
             txtId.Enabled = false;// Grisea el campo ID
-            
+
             try
             {
                 //configuración inicial de la pantalla.
@@ -60,7 +60,7 @@ namespace Ecommerce
 
                     //configurar acciones
                     if (!seleccionado.ESTADO)
-                      btnInactivar.Text = "Reactivar";
+                        btnInactivar.Text = "Reactivar";
                 }
 
             }
@@ -94,7 +94,6 @@ namespace Ecommerce
                 @URLimagen varchar(400)
                 */
 
-
                 nuevo.CODIGO = txtCodigo.Text;
                 nuevo.DESCRIPCION = txtDesc.Text;
                 nuevo.DESCRIPCION_AD = txtDescAD.Text;
@@ -119,7 +118,7 @@ namespace Ecommerce
                 Response.Redirect("ProductosListaEdit.aspx", false);// me lleva a la pantalla del listado
 
             }
-            catch (Exception )
+            catch (Exception)
             {
                 Response.Redirect("Error0.aspx");
             }

@@ -13,7 +13,8 @@ namespace Ecommerce
 
     public partial class FormaDeEnvio : System.Web.UI.Page
     {
-
+    public List<Articulo> carrito { get; set; }
+        public CarritoC nuevoCarritoC { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,30 +28,19 @@ namespace Ecommerce
                 ddlFormaDePago.Visible = false;
                 btnHacerPedido.Visible = false;
                 SolicitaFactura.Visible = false;
-                //btnSi.Visible=false;
-                //btnNo.Visible = false;
                 rdbSI.Visible = false;
                 rdbNO.Visible = false;
             }
 
         }
 
-        protected void txtSI_Click(object sender, EventArgs e)
-        {
-            lbCondFiscal.Visible = true;
-            ddlCondFiscal.Visible = true;
-            lbCUIT.Visible = true;
-            txtCUIT.Visible = true;
-        }
 
         protected void txtCUIT_TextChanged(object sender, EventArgs e)
         {
             lbFormaDePago.Visible = true;
             ddlFormaDePago.Visible = true;
+
         }
-
-
-
 
         protected void ddlFormaDePago_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -93,12 +83,7 @@ namespace Ecommerce
 
 
             }
-
-            // si hay muchas opciones puede ir un enumerable+
-            //    DetallePedido.a = true;
-            //else if (rdbNO.Checked)
-            //    aaa.importado = false;
-
+                      
         }
 
         protected void NO_CheckedChanged(object sender, EventArgs e)
@@ -115,6 +100,41 @@ namespace Ecommerce
                 Session.Add("Factura", rdbNO.Checked);
 
             }
+        }
+
+        protected void btnHacerPedido_Click(object sender, EventArgs e)
+        {
+            // bajar de la session DEL CARRITO un objeto articulo 
+            // pasar el objeto articulo a un metodo agregarDetallePedido
+            // Revisar tabla detalle pedido y crear SP
+            CarritoC nuevoCarritoC = new CarritoC();
+            nuevoCarritoC.ARTICULO = new Articulo();
+            CarritoCNegocio carritocNegocio = new CarritoCNegocio();
+
+            carrito = (List<Articulo>)Session["carritoCompra"];
+
+            //xxx = (Usuario)Session["usuarioActual"];
+            //string id = Convert.ToString(xxx.IDUSUARIO);
+
+            foreach (Articulo aux in carrito)
+
+            {
+                nuevoCarritoC.ARTICULO.ID = aux.ID;
+
+                nuevoCarritoC.CANTIDAD = aux.CANTIDAD;
+
+                nuevoCarritoC.MONTO = aux.CANTIDAD * aux.PRECIO;
+
+            carritocNegocio.AgregarCarritoCconSP(nuevoCarritoC);
+            }
+
+
+
+            //Articulo nuevo = new Articulo();  // lo instancio para poder llamar al metodo agregarConSP 
+            //ArticuloNegocio negocio = new ArticuloNegocio();//aca cargamos los datos del nuevo art 
+
+
+
         }
     }
 }

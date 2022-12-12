@@ -26,7 +26,7 @@
                                 <%int count = 0; foreach (var arti in carrito)
                                     { %>
                                 <tr>
-                                    <td><%=arti.CODIGO %></td>
+                                    <td><%=arti.ID %></td>
                                     <td><%=arti.DESCRIPCION %></td>
                                     <td><%=arti.CANTIDAD %></td>
                                     <td><%=arti.PRECIO * arti.CANTIDAD %></td>

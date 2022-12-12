@@ -19,10 +19,9 @@
                 <asp:Label ID="SolicitaFactura" runat="server" Text="Label">Solicita factura?</asp:Label>
 
 
-                <asp:RadioButton ID="rdbSI" Text="SI" OnCheckedChanged="SI_CheckedChanged" runat="server" GroupName="Factura" AutoPostBack="true" />
-                <asp:RadioButton ID="rdbNO" Text="NO" OnCheckedChanged="NO_CheckedChanged" runat="server" GroupName="Factura" AutoPostBack="true" />
-                <%--<asp:Button Text="SI" ID="btnSi" CssClass="btn btn-primary" runat="server" OnClick="txtSI_Click" />
-                <asp:Button Text="NO" ID="btnNo" CssClass="btn btn-primary" runat="server" />--%>
+                <asp:RadioButton ID="rdbSI" Text="SI" CssClass="btn btn-info-sm" OnCheckedChanged="SI_CheckedChanged" runat="server" GroupName="Factura" AutoPostBack="true" />
+                <asp:RadioButton ID="rdbNO" Text="NO" CssClass="btn btn-info-sm" OnCheckedChanged="NO_CheckedChanged" runat="server" GroupName="Factura" AutoPostBack="true" />
+                
                 <br />
                 <br />
 
@@ -50,7 +49,7 @@
                 </asp:DropDownList>
 
                 <br />
-                <asp:Button ID="btnHacerPedido" Text="Realizar Pedido" CssClass="btn btn-primary" runat="server" />
+                <asp:Button ID="btnHacerPedido" Text="Realizar Pedido" CssClass="btn btn-primary" runat="server" OnClick="btnHacerPedido_Click"/>
 
 
 

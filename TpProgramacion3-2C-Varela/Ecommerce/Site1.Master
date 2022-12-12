@@ -57,7 +57,7 @@
                         </li>
 
                         <li class="nav-item active mx-4">
-                            <a class="nav-link" href="PedidosVistaCliente.aspx">Mis Pedidos <i class="fa-solid fa-sheet-plastic"></i></a>
+                            <a class="nav-link" href="PedidosVistaCliente.aspx?id=<%:usuarioActual.IDUSUARIO%>">Mis Pedidos <i class="fa-solid fa-sheet-plastic"></i></a>
                         </li>
 
                         

@@ -8,7 +8,7 @@ namespace Dominio
 {
     public class Factura
     {
-        public int IDFACTURA { get; set; }
+       // public int IDFACTURA { get; set; }
         public string CONDICIONFISCAL { get; set; } 
         public string NROCUIT { get; set; } 
         public bool PIDE { get; set; }  
