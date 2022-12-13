@@ -30,6 +30,7 @@ namespace Negocio
                 datos.setearParametro("@IDARTICULO", NuevoCarrito.ARTICULO.ID);
                 datos.setearParametro("@CANTIDAD", NuevoCarrito.CANTIDAD);
                 datos.setearParametro("@MONTO", NuevoCarrito.MONTO);
+                //datos.setearParametro("@TOTAL", NuevoCarrito.TOTAL);
 
 
                 datos.ejecutarAccion();

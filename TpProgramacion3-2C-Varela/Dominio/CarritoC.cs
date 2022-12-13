@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-     public class CarritoC
+    public class CarritoC
     {
         //public int ID { get; set; }
         public int NROCOMPROBANTE { get; set; }
@@ -14,7 +14,8 @@ namespace Dominio
         public int CANTIDAD { get; set; }
         public decimal MONTO { get; set; }
         public bool ESTADO { get; set; }
-       
-          
+        public decimal TOTAL { get; set; }
+
+
     }
 }

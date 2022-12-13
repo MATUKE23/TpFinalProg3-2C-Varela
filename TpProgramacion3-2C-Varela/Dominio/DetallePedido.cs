@@ -17,6 +17,7 @@ namespace Dominio
         public DateTime FECHAMODIFICACION { get; set; }
         public DateTime FECHAALTA { get; set; }
         public string ESTADO { get; set; }
+        public decimal TOTAL { get; set; }
 
     }
 }

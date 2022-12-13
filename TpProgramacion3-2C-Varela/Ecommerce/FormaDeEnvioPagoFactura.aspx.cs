@@ -15,7 +15,7 @@ namespace Ecommerce
     {
         public List<Articulo> carrito { get; set; }
         public CarritoC nuevoCarritoC { get; set; }
-
+        public decimal total { get; set; }
         public Usuario usuarioActual { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -87,7 +87,7 @@ namespace Ecommerce
 
 
             }
-                      
+
         }
 
         protected void NO_CheckedChanged(object sender, EventArgs e)
@@ -111,7 +111,7 @@ namespace Ecommerce
             // bajar de la session DEL CARRITO un objeto articulo 
             // pasar el objeto articulo a un metodo agregarDetallePedido
             // Revisar tabla detalle pedido y crear SP
-           
+
             DetallePedidoNegocio detallePedidoNegocio = new DetallePedidoNegocio();
 
             DetallePedido nuevoDetallePedido = new DetallePedido();
@@ -124,33 +124,39 @@ namespace Ecommerce
             nuevoDetallePedido.FACTURA.CONDICIONFISCAL = ddlCondFiscal.SelectedValue;
             nuevoDetallePedido.FACTURA.NROCUIT = txtCUIT.ToString();
             nuevoDetallePedido.FORMADEPAGO = ddlFormaDePago.SelectedValue;
+            nuevoDetallePedido.CARRITO = new CarritoC();
+            nuevoDetallePedido.CARRITO.MONTO = total;
 
             detallePedidoNegocio.AgregarDetallePedidoConSP(nuevoDetallePedido);
 
-            
+
 
             CarritoC nuevoCarritoC = new CarritoC();
-            
-            
+
+
             CarritoCNegocio carritocNegocio = new CarritoCNegocio();
 
 
             carrito = (List<Articulo>)Session["carritoCompra"];
 
-            //nuevoCarritoC.ARTICULO = new Articulo();
 
             foreach (Articulo aux in carrito)
 
-            { 
+            {
                 nuevoCarritoC.NROCOMPROBANTE = detallePedidoNegocio.ObtenerNroComprobante();
 
                 nuevoCarritoC.ARTICULO.ID = aux.ID;
 
                 nuevoCarritoC.CANTIDAD = aux.CANTIDAD;
 
+                //nuevoCarritoC.TOTAL  += (aux.CANTIDAD * aux.PRECIO);
+
                 nuevoCarritoC.MONTO = aux.CANTIDAD * aux.PRECIO;
 
-            carritocNegocio.AgregarCarritoCconSP(nuevoCarritoC);
+                //total += (aux.CANTIDAD * aux.PRECIO);
+
+
+                carritocNegocio.AgregarCarritoCconSP(nuevoCarritoC);
             }
 
         }
