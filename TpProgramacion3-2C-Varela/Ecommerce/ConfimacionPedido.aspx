@@ -8,6 +8,6 @@
     <br />
     <h2>Su pedido esta en proceso de produccion, le informaremos cuando este disponible para entregar.</h2>
 
-    <a href="PedidosVistaCliente.aspx">Ir a ver mis pedidos</a>
+    <asp:Button Text="Ir a mis Pedidos" ID="IraMisPedidos" class="btn btn-primary" OnClick="IraMisPedidos_Click1" runat="server" />
 
 </asp:Content>
