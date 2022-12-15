@@ -161,7 +161,11 @@ namespace Ecommerce
                 nuevoCarritoC.MONTO = 0;
             }
 
-          //  Response.Redirect("ConfirmacionPedido.aspx", false);
+            
+                Response.Redirect("ConfimacionPedido.aspx", false);
+            
+        
+           
 
         }
     }

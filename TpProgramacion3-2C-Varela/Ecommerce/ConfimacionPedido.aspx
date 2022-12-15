@@ -6,6 +6,8 @@
     <h2>Gracias por su compra.
     </h2>
     <br />
-    <h2>Su pedido esta en proceso de producion, le informaremos cuendo este disponible para entregar.</h2>
+    <h2>Su pedido esta en proceso de produccion, le informaremos cuando este disponible para entregar.</h2>
+
+    <a href="PedidosVistaCliente.aspx">Ir a ver mis pedidos</a>
 
 </asp:Content>

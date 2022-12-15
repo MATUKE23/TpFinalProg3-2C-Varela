@@ -12,26 +12,23 @@ namespace Ecommerce
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-            
-                string id = Request.QueryString["id"]; // != null ? Request.QueryString["id"].ToString() : "";
 
-                DetallePedidoNegocio negocio = new DetallePedidoNegocio();// ME PERMITE DEVOLVER UNA LISTA DE DATOS
-                dgvDatosCompra.DataSource = negocio.listarDetallePedidoVistaCliente(id);
-                dgvDatosCompra.DataBind();
+            string id = Request.QueryString["id"]; // != null ? Request.QueryString["id"].ToString() : "";
+
+            DetallePedidoNegocio negocio = new DetallePedidoNegocio();// ME PERMITE DEVOLVER UNA LISTA DE DATOS
+            dgvDatosCompra.DataSource = negocio.listarDetallePedidoVistaCliente(id);
+            dgvDatosCompra.DataBind();
 
 
-                
 
-            
 
         }
 
-        
+
         protected void dgvDatosCompra_SelectedIndexChanged(object sender, EventArgs e)
         {
             string id = dgvDatosCompra.SelectedDataKey.Value.ToString();
-            Response.Redirect("Modificar Productos.aspx?id=" + id);
+            Response.Redirect("DetalleCarritoConformado.aspx?id=" + id);
         }
 
         protected void dgvDatosCompra_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
@@ -40,6 +37,6 @@ namespace Ecommerce
             dgvDatosCompra.DataBind();
         }
 
-        
+
     }
 }
