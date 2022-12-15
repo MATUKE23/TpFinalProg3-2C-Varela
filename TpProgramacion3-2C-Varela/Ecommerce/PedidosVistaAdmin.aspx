@@ -4,33 +4,18 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>Buscar Nro de Pedido:</h2>
-    <br />
 
-    <asp:GridView ID="GridView1" runat="server"></asp:GridView>
-
-
-    <%--<asp:GridView ID="dgvProductos" runat="server" DataKeyNames="Id" CssClass="table" class="card-text" 
-         AllowPaging="false" PageSize="5">
-        agrego paginacion y tope de paginas a la lista
+    <asp:GridView ID="dgvDetalleVentas" runat="server" DataKeyNames="NROCOMPROBANTE" CssClass="table" class="card-text" 
+         AllowPaging="false" PageSize="5"  AutoGenerateColumns="false" >
         <Columns>
-            <asp:BoundField HeaderText="Fecha de venta" DataField="FECHAVENTA" />
-            <asp:BoundField HeaderText="E-mail" DataField="USUARIO" />
-            <asp:BoundField HeaderText="Codigo de articulo" DataField="CODIGO" />
-            <asp:BoundField HeaderText="Nombre de articulo" DataField="DESCRIPCION" />
-            <asp:BoundField HeaderText="Nombre del cliente" DataField="NOMBRES" />
-            <asp:BoundField HeaderText="Cantidad" DataField="CANTIDAD" />
-            <asp:BoundField HeaderText="Apellido del cliente" DataField="APELLIDOS" />
-            <asp:BoundField HeaderText="Precio del Articulo" DataField="PRECIO" />
-            <asp:BoundField HeaderText="Monto" DataField="MONTO" />
-            <asp:BoundField HeaderText="Domicilio" DataField="DOMICILIO" />
-             CALLE+ NRO+ ENTRECALLES + DPTO + LOCALIDAD + OBSERVACIONES 
+    <asp:BoundField HeaderText="Nro de Comprobante" DataField="NROCOMPROBANTE" />
+            <asp:BoundField HeaderText="Fecha de Venta" DataField="FECHAALTA" />
+            <asp:BoundField HeaderText="Hora de Venta" DataField="HORAALTA" />
+            <asp:CheckBoxField HeaderText="Solicito Factura" DataField="FACTURA.PIDE" />
             <asp:BoundField HeaderText="Forma de Envio" DataField="FORMADEENVIO" />
             <asp:BoundField HeaderText="Forma de Pago" DataField="FORMADEPAGO" />
-            <asp:CheckBoxField HeaderText="Estado" DataField="ESTADO" />
+            <asp:BoundField HeaderText="Total a Cobrar" DataField="TOTAL" />
+            <asp:BoundField HeaderText="Estado" DataField="ESTADO" />
         </Columns>
-    </asp:GridView>--%>
-
-
-
+    </asp:GridView>
 </asp:Content>

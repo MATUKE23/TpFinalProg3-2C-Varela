@@ -50,7 +50,7 @@ namespace Negocio
         }
 
 
-        public List<DetallePedido> listarDetallePedido(string id)
+        public List<DetallePedido> listarDetallePedidoVistaCliente(string id)
         {
             List<DetallePedido> lista = new List<DetallePedido>();
             SqlConnection conexion = new SqlConnection();
@@ -104,22 +104,77 @@ namespace Negocio
 
         }
 
-        
-/*
-        public List<DetallePedido> listar()
+
+
+        public List<DetallePedido> listarDetallePedidoVistaAdmin()
         {
             List<DetallePedido> lista = new List<DetallePedido>();
+            SqlConnection conexion = new SqlConnection();
+            SqlCommand comando = new SqlCommand();
+            SqlDataReader lector;
 
-            lista.Add(new DetallePedido());
-            lista.Add(new DetallePedido());
+            try
+            {
+                conexion.ConnectionString = "server=.\\SQLEXPRESS; database=ECOMMERCE; integrated security=true";
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = "SELECT NROCOMPROBANTE, IDCLIENTE, FORMADEENVIO, PIDEFACTURA, FORMADEPAGO, FECHAALTA, ESTADO, HORAALTA, TOTAL from DETALLEPEDIDO";
+                // if (id != "")
+                //comando.CommandText += " WHERE IDCLIENTE = " + id;
+                comando.Connection = conexion;
 
-            lista[0].NROCOMPROBANTE = 1234;
-            lista[1].NROCOMPROBANTE = 4567;
+                conexion.Open();
+                lector = comando.ExecuteReader();
 
-            return lista;
+                while (lector.Read())
+                {
+                    DetallePedido aux = new DetallePedido();
+                    aux.NROCOMPROBANTE = (Int64)lector["NROCOMPROBANTE"];
+
+                    aux.CLIENTE = new Cliente();
+                    aux.CLIENTE.IDCLIENTE = (int)lector["IDCLIENTE"]; //entre comillas es el el nombre que tiene en la base
+                    aux.FORMADEENVIO = (string)lector["FORMADEENVIO"];
+
+                    aux.FACTURA = new Factura();
+                    aux.FACTURA.PIDE = (bool)lector["PIDEFACTURA"];
+
+                    aux.FORMADEPAGO = (string)lector["FORMADEPAGO"];
+                    aux.FECHAALTA = (DateTime)lector["FECHAALTA"];
+                    aux.ESTADO = (string)lector["ESTADO"];
+                    aux.HORAALTA = (TimeSpan)lector["HORAALTA"];
+                    aux.TOTAL = (Double)lector["TOTAL"];
+
+
+                    lista.Add(aux);
+
+                }
+
+                conexion.Close();
+                return lista;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
 
         }
-*/
+
+        /*
+                public List<DetallePedido> listar()
+                {
+                    List<DetallePedido> lista = new List<DetallePedido>();
+
+                    lista.Add(new DetallePedido());
+                    lista.Add(new DetallePedido());
+
+                    lista[0].NROCOMPROBANTE = 1234;
+                    lista[1].NROCOMPROBANTE = 4567;
+
+                    return lista;
+
+                }
+        */
 
         public List<DetallePedido> listarDetallePedidoConSP()
         {

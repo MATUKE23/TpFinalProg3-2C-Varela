@@ -17,22 +17,17 @@ namespace Ecommerce
                 string id = Request.QueryString["id"]; // != null ? Request.QueryString["id"].ToString() : "";
 
                 DetallePedidoNegocio negocio = new DetallePedidoNegocio();// ME PERMITE DEVOLVER UNA LISTA DE DATOS
-                dgvDatosCompra.DataSource = negocio.listarDetallePedido(id);
+                dgvDatosCompra.DataSource = negocio.listarDetallePedidoVistaCliente(id);
                 dgvDatosCompra.DataBind();
 
 
-/*
-                DetallePedidoNegocio negocio2 = new DetallePedidoNegocio();// ME PERMITE DEVOLVER UNA LISTA DE DATOS
-                XXX.DataSource = negocio2.listar();
-                XXX.DataBind();
-*/
                 
 
             
 
         }
 
-        /*
+        
         protected void dgvDatosCompra_SelectedIndexChanged(object sender, EventArgs e)
         {
             string id = dgvDatosCompra.SelectedDataKey.Value.ToString();
@@ -45,6 +40,6 @@ namespace Ecommerce
             dgvDatosCompra.DataBind();
         }
 
-        */
+        
     }
 }

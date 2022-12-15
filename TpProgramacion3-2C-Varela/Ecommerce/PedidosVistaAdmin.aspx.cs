@@ -12,12 +12,12 @@ namespace Ecommerce
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
-             DetallePedidoNegocio negocio = new DetallePedidoNegocio();// ME PERMITE DEVOLVER UNA LISTA DE DATOS
-            GridView1.DataSource = negocio.listarDetallePedido("4");
-            GridView1.DataBind();
+            
+            DetallePedidoNegocio negocio = new DetallePedidoNegocio();// ME PERMITE DEVOLVER UNA LISTA DE DATOS
+            dgvDetalleVentas.DataSource = negocio.listarDetallePedidoVistaAdmin();
+            dgvDetalleVentas.DataBind();
 
-            */
+            
         } 
     }
 }
