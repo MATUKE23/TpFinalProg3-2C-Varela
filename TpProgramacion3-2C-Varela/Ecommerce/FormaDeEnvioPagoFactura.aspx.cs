@@ -15,6 +15,8 @@ namespace Ecommerce
     {
         public List<Articulo> carrito { get; set; }
         public CarritoC nuevoCarritoC { get; set; }
+
+        public Articulo ARTICULO = new Articulo();
         public decimal total { get; set; }
         public Usuario usuarioActual { get; set; }
         protected void Page_Load(object sender, EventArgs e)
@@ -129,37 +131,37 @@ namespace Ecommerce
 
             detallePedidoNegocio.AgregarDetallePedidoConSP(nuevoDetallePedido);
 
-
-
             CarritoC nuevoCarritoC = new CarritoC();
-
 
             CarritoCNegocio carritocNegocio = new CarritoCNegocio();
 
-
             carrito = (List<Articulo>)Session["carritoCompra"];
 
+            
 
             foreach (Articulo aux in carrito)
 
             {
-               // nuevoCarritoC.NROCOMPROBANTE = detallePedidoNegocio.ObtenerNroComprobante();
+
+
+                nuevoCarritoC.ARTICULO = new Articulo();
 
                 nuevoCarritoC.ARTICULO.ID = aux.ID;
 
+                nuevoCarritoC.NROCOMPROBANTE = detallePedidoNegocio.ObtenerNroComprobante();
+
                 nuevoCarritoC.CANTIDAD = aux.CANTIDAD;
 
-                //nuevoCarritoC.TOTAL  += (aux.CANTIDAD * aux.PRECIO);
+                nuevoCarritoC.TOTAL += (aux.CANTIDAD * aux.PRECIO);
 
                 nuevoCarritoC.MONTO = aux.CANTIDAD * aux.PRECIO;
 
-                //total += (aux.CANTIDAD * aux.PRECIO);
-
-
                 carritocNegocio.AgregarCarritoCconSP(nuevoCarritoC);
+
+                nuevoCarritoC.MONTO = 0;
             }
 
-            Response.Redirect("PedidosVistaCliente.aspx", false);
+          //  Response.Redirect("ConfirmacionPedido.aspx", false);
 
         }
     }

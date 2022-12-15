@@ -160,7 +160,7 @@ namespace Negocio
 
         }
 
-        /*
+        /* prueba de Datagridview
                 public List<DetallePedido> listar()
                 {
                     List<DetallePedido> lista = new List<DetallePedido>();
@@ -213,7 +213,42 @@ namespace Negocio
             }
         }
 
+        public Int64 ObtenerNroComprobante()
+        {
 
+            SqlConnection conexion = new SqlConnection();
+            SqlCommand comando = new SqlCommand();
+            SqlDataReader lector;
+
+            try
+            {
+                conexion.ConnectionString = "server=.\\SQLEXPRESS; database=ECOMMERCE; integrated security=true";
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = "select top 1 NROCOMPROBANTE from DETALLEPEDIDO order by NROCOMPROBANTE DESC";
+                comando.Connection = conexion;
+
+                conexion.Open();
+                lector = comando.ExecuteReader();
+
+                DetallePedido aux = new DetallePedido();
+                while (lector.Read())
+                {
+                    aux.NROCOMPROBANTE = (Int64)lector["NROCOMPROBANTE"];
+
+                }
+
+                conexion.Close();
+
+                return aux.NROCOMPROBANTE;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+        }
 
     }
 }

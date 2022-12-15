@@ -18,7 +18,8 @@
                                     <th>Codigo</th>
                                     <th>Descripción</th>
                                     <th>Cantidad</th>
-                                    <th>monto</th>
+                                    <th>Precio Unitario</th>
+                                    <th>Monto</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
@@ -29,6 +30,7 @@
                                     <td><%=arti.ID %></td>
                                     <td><%=arti.DESCRIPCION %></td>
                                     <td><%=arti.CANTIDAD %></td>
+                                    <td><%=arti.PRECIO %></td>
                                     <td><%=arti.PRECIO * arti.CANTIDAD %></td>
                                     <td>
                                         <a href="Carrito.aspx?contador=<%=count%>&accion=agregar" title="Agregar una cantidad" 

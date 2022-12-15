@@ -105,6 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConfimacionPedido.aspx" />
     <Content Include="DatosClienteCargados.aspx" />
     <Content Include="PedidosVistaAdmin.aspx" />
     <Content Include="Administrar Usuarios y Contraseñas.aspx" />
@@ -184,6 +185,13 @@
     <Content Include="Site1.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfimacionPedido.aspx.cs">
+      <DependentUpon>ConfimacionPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfimacionPedido.aspx.designer.cs">
+      <DependentUpon>ConfimacionPedido.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DatosClienteCargados.aspx.cs">
       <DependentUpon>DatosClienteCargados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
