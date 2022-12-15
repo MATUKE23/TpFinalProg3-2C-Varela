@@ -143,7 +143,7 @@ namespace Ecommerce
             foreach (Articulo aux in carrito)
 
             {
-                nuevoCarritoC.NROCOMPROBANTE = detallePedidoNegocio.ObtenerNroComprobante();
+               // nuevoCarritoC.NROCOMPROBANTE = detallePedidoNegocio.ObtenerNroComprobante();
 
                 nuevoCarritoC.ARTICULO.ID = aux.ID;
 
@@ -158,6 +158,8 @@ namespace Ecommerce
 
                 carritocNegocio.AgregarCarritoCconSP(nuevoCarritoC);
             }
+
+            Response.Redirect("PedidosVistaCliente.aspx", false);
 
         }
     }

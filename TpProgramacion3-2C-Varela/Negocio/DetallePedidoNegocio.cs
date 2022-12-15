@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Dominio;
 
 namespace Negocio
@@ -49,35 +50,50 @@ namespace Negocio
         }
 
 
-        public int ObtenerNroComprobante()
+        public List<DetallePedido> listarDetallePedido(string id)
         {
+            List<DetallePedido> lista = new List<DetallePedido>();
             SqlConnection conexion = new SqlConnection();
             SqlCommand comando = new SqlCommand();
             SqlDataReader lector;
-
-            int nrocomp;
 
             try
             {
                 conexion.ConnectionString = "server=.\\SQLEXPRESS; database=ECOMMERCE; integrated security=true";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "SELECT TOP (1) NROCOMPROBANTE FROM DETALLEPEDIDO ORDER BY FECHAALTA DESC";
+                comando.CommandText = "SELECT NROCOMPROBANTE, IDCLIENTE, FORMADEENVIO, PIDEFACTURA, FORMADEPAGO, FECHAALTA, ESTADO, HORAALTA, TOTAL from DETALLEPEDIDO ";
+               // if (id != "")
+                comando.CommandText += " WHERE IDCLIENTE = " + id;
                 comando.Connection = conexion;
 
                 conexion.Open();
                 lector = comando.ExecuteReader();
 
-
                 while (lector.Read())
                 {
+                    DetallePedido aux = new DetallePedido();
+                    aux.NROCOMPROBANTE = (Int64)lector["NROCOMPROBANTE"];
 
-                    nrocomp = (int)lector["NROCOMPROBANTE"];
+                    aux.CLIENTE = new Cliente();
+                    aux.CLIENTE.IDCLIENTE = (int)lector["IDCLIENTE"]; //entre comillas es el el nombre que tiene en la base
+                    aux.FORMADEENVIO = (string)lector["FORMADEENVIO"];
 
+                    aux.FACTURA = new Factura();
+                    aux.FACTURA.PIDE = (bool)lector["PIDEFACTURA"];
+
+                    aux.FORMADEPAGO = (string)lector["FORMADEPAGO"];
+                    aux.FECHAALTA = (DateTime)lector["FECHAALTA"];
+                    aux.ESTADO = (string)lector["ESTADO"];
+                    aux.HORAALTA = (TimeSpan)lector["HORAALTA"];
+                    aux.TOTAL = (Double)lector["TOTAL"];
+
+
+                    lista.Add(aux);
 
                 }
 
                 conexion.Close();
-                return nrocomp;
+                return lista;
             }
             catch (Exception ex)
             {
@@ -88,20 +104,62 @@ namespace Negocio
 
         }
 
-
-            public List<DetallePedido> Listar()
+        
+/*
+        public List<DetallePedido> listar()
         {
-            List<DetallePedido> Lista = new List<DetallePedido>();
-            return Lista;
+            List<DetallePedido> lista = new List<DetallePedido>();
+
+            lista.Add(new DetallePedido());
+            lista.Add(new DetallePedido());
+
+            lista[0].NROCOMPROBANTE = 1234;
+            lista[1].NROCOMPROBANTE = 4567;
+
+            return lista;
+
+        }
+*/
+
+        public List<DetallePedido> listarDetallePedidoConSP()
+        {
+            List<DetallePedido> lista = new List<DetallePedido>();
+            AccesoaDatos datos = new AccesoaDatos();
+            try
+            {
+                datos.setearSP("listarDetallePedidoConSP");// ESTO LO AGREGO EN LA CLASE DE ACCESO A DATOS
+                //CON ESTO EVITO LA CONSULTA EMBEBIDA QUE PUEDE FALLAR EN ALGUNA COMA Y ROMPE
+
+
+                datos.ejecutarLectura();
+                while (datos.Lector.Read())
+                {
+                    /*Pokemon aux = new Pokemon();
+                    aux.Numero = datos.Lector.GetInt32(0);
+                    aux.Nombre = (string)datos.Lector["Nombre"];
+                    aux.Descripcion = (string)datos.Lector["Descripcion"];
+                    if (!(datos.Lector["UrlImagen"] is DBNull))
+                        aux.UrlImagen = (string)datos.Lector["UrlImagen"];
+                    aux.Tipo = new Elemento();
+                    aux.Tipo.Descripcion = (string)datos.Lector["Tipo"];
+                    aux.Debilidad = new Elemento();
+                    aux.Debilidad.Descripcion = (string)datos.Lector["Debilidad"];
+
+                    
+                    lista.Add(aux);
+                    */
+                }
+
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
-        public List<DetallePedido> ListarPorComprobante(int nroComprobante)
-        {
-            List<DetallePedido> Lista = new List<DetallePedido>();
-            return Lista;
-        }
 
-   
 
     }
 }
+

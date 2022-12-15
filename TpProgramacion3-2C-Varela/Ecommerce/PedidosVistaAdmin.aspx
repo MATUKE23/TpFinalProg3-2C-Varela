@@ -7,9 +7,12 @@
     <h2>Buscar Nro de Pedido:</h2>
     <br />
 
-    <asp:GridView ID="dgvProductos" runat="server" DataKeyNames="Id" CssClass="table" class="card-text" 
+    <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+
+
+    <%--<asp:GridView ID="dgvProductos" runat="server" DataKeyNames="Id" CssClass="table" class="card-text" 
          AllowPaging="false" PageSize="5">
-        <%--agrego paginacion y tope de paginas a la lista--%>
+        agrego paginacion y tope de paginas a la lista
         <Columns>
             <asp:BoundField HeaderText="Fecha de venta" DataField="FECHAVENTA" />
             <asp:BoundField HeaderText="E-mail" DataField="USUARIO" />
@@ -21,16 +24,12 @@
             <asp:BoundField HeaderText="Precio del Articulo" DataField="PRECIO" />
             <asp:BoundField HeaderText="Monto" DataField="MONTO" />
             <asp:BoundField HeaderText="Domicilio" DataField="DOMICILIO" />
-            <%-- CALLE+ NRO+ ENTRECALLES + DPTO + LOCALIDAD + OBSERVACIONES --%>
+             CALLE+ NRO+ ENTRECALLES + DPTO + LOCALIDAD + OBSERVACIONES 
             <asp:BoundField HeaderText="Forma de Envio" DataField="FORMADEENVIO" />
             <asp:BoundField HeaderText="Forma de Pago" DataField="FORMADEPAGO" />
             <asp:CheckBoxField HeaderText="Estado" DataField="ESTADO" />
-
-
-         
         </Columns>
-
-    </asp:GridView>
+    </asp:GridView>--%>
 
 
 
