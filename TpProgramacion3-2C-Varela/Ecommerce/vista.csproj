@@ -109,6 +109,7 @@
     <Content Include="DatosClienteCargados.aspx" />
     <Content Include="DetalleCarritoConformado.aspx" />
     <Content Include="DetalleCarritoConformadoAdmin.aspx" />
+    <Content Include="DetalleDomicilioAdmin.aspx" />
     <Content Include="PedidosVistaAdmin.aspx" />
     <Content Include="Administrar Usuarios y Contraseñas.aspx" />
     <Content Include="Carrito.aspx" />
@@ -214,6 +215,13 @@
     </Compile>
     <Compile Include="DetalleCarritoConformadoAdmin.aspx.designer.cs">
       <DependentUpon>DetalleCarritoConformadoAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleDomicilioAdmin.aspx.cs">
+      <DependentUpon>DetalleDomicilioAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleDomicilioAdmin.aspx.designer.cs">
+      <DependentUpon>DetalleDomicilioAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="PedidosVistaAdmin.aspx.cs">
       <DependentUpon>PedidosVistaAdmin.aspx</DependentUpon>
