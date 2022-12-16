@@ -105,7 +105,6 @@ namespace Negocio
         }
 
 
-
         public List<DetallePedido> listarDetallePedidoVistaAdmin()
         {
             List<DetallePedido> lista = new List<DetallePedido>();
@@ -117,9 +116,7 @@ namespace Negocio
             {
                 conexion.ConnectionString = "server=.\\SQLEXPRESS; database=ECOMMERCE; integrated security=true";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "SELECT NROCOMPROBANTE, IDCLIENTE, FORMADEENVIO, PIDEFACTURA, FORMADEPAGO, FECHAALTA, ESTADO, HORAALTA, TOTAL from DETALLEPEDIDO";
-                // if (id != "")
-                //comando.CommandText += " WHERE IDCLIENTE = " + id;
+                comando.CommandText = "SELECT D.NROCOMPROBANTE, D.IDCLIENTE, C.NOMBRES, C.APELLIDOS, DO.PROVINCIA, DO.PARTIDO, D.FORMADEENVIO, D.PIDEFACTURA, D.FORMADEPAGO, D.FECHAALTA,  D.HORAALTA, D.Estado, D.TOTAL from DETALLEPEDIDO AS D INNER JOIN CLIENTES AS C ON D.IDCLIENTE= C.IDCLIENTE INNER JOIN DOMICILIOS AS DO ON C.IDCLIENTE = DO.IDDOMICILIO";
                 comando.Connection = conexion;
 
                 conexion.Open();
@@ -132,6 +129,12 @@ namespace Negocio
 
                     aux.CLIENTE = new Cliente();
                     aux.CLIENTE.IDCLIENTE = (int)lector["IDCLIENTE"]; //entre comillas es el el nombre que tiene en la base
+                    aux.CLIENTE.NOMBRES = (string)lector["NOMBRES"];
+                    aux.CLIENTE.APELLIDOS = (string)lector["APELLIDOS"];
+                    aux.CLIENTE.DOMICILIO = new Domicilio();
+                    aux.CLIENTE.DOMICILIO.PROVINCIA = (string)lector["PROVINCIA"];
+                    aux.CLIENTE.DOMICILIO.PARTIDO = (string)lector["PARTIDO"];
+                    //aux.CLIENTE.DOMICILIO.CALLE = (string)lector["CALLE"];
                     aux.FORMADEENVIO = (string)lector["FORMADEENVIO"];
 
                     aux.FACTURA = new Factura();
@@ -139,8 +142,8 @@ namespace Negocio
 
                     aux.FORMADEPAGO = (string)lector["FORMADEPAGO"];
                     aux.FECHAALTA = (DateTime)lector["FECHAALTA"];
-                    aux.ESTADO = (string)lector["ESTADO"];
                     aux.HORAALTA = (TimeSpan)lector["HORAALTA"];
+                    aux.ESTADO = (string)lector["ESTADO"];
                     aux.TOTAL = (Double)lector["TOTAL"];
 
 
@@ -159,6 +162,8 @@ namespace Negocio
 
 
         }
+
+
 
         /* prueba de Datagridview
                 public List<DetallePedido> listar()
