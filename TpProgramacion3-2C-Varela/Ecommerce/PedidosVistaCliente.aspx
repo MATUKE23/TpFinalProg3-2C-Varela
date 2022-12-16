@@ -6,7 +6,8 @@
 
 
     <asp:GridView ID="dgvDatosCompra" runat="server" DataKeyNames="NROCOMPROBANTE" CssClass="table" class="card-text" AutoGenerateColumns="false"
-         AllowPaging="false" PageSize="5" >
+        OnSelectedIndexChanged="dgvDatosCompra_SelectedIndexChanged" OnSelectedIndexChanging="dgvDatosCompra_SelectedIndexChanging"
+        AllowPaging="false" PageSize="5">
         <Columns>
             <asp:BoundField HeaderText="Nro. de Pedido" DataField="NROCOMPROBANTE" />
             <asp:BoundField HeaderText="Fecha de Compra" DataField="FECHAALTA" />
@@ -16,11 +17,11 @@
             <asp:BoundField HeaderText="Forma de Pago" DataField="FORMADEPAGO" />
             <asp:BoundField HeaderText="Total a Pagar" DataField="TOTAL" />
             <asp:BoundField HeaderText="Estado" DataField="ESTADO" />
-            <asp:CommandField HeaderText="Ver Detalle de Articulos"  ShowSelectButton="true" SelectText="📑" />
-            
+            <asp:CommandField HeaderText="Ver Detalle de Articulos" ShowSelectButton="true" SelectText="📑" />
+
         </Columns>
 
     </asp:GridView>
-    
+
 
 </asp:Content>

@@ -6,7 +6,7 @@
     <h1>Lista de Productos Comprados</h1>
 
     
-    <asp:GridView ID="dgvDatosDetalleCarritoConformado" runat="server" DataKeyNames="ARTICULO.CODIGO" CssClass="table" 
+    <asp:GridView ID="dgvDatosDetalleCarritoConformado" runat="server"  CssClass="table" 
         class="card-text" AutoGenerateColumns="false" AllowPaging="false" PageSize="5"
         >
         <Columns>
