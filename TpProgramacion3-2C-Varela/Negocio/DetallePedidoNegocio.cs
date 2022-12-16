@@ -33,6 +33,8 @@ namespace Negocio
                 datos.setearParametro("@FORMADEENVIO", NuevoDetallePedido.FORMADEENVIO);
                 datos.setearParametro("@PIDEFACTURA", NuevoDetallePedido.FACTURA.PIDE);
                 datos.setearParametro("@FORMADEPAGO", NuevoDetallePedido.FORMADEPAGO);
+                datos.setearParametro("@CUIT", NuevoDetallePedido.FACTURA.NROCUIT);
+                datos.setearParametro("@CONDICIONFISCAL", NuevoDetallePedido.FACTURA.CONDICIONFISCAL);
                 //datos.setearParametro("@FECHAMODIFICACION", NuevoDetallePedido.FECHAMODIFICACION);
                 //datos.setearParametro("@FECHAALTA", NuevoDetallePedido.FECHAALTA);
                 datos.ejecutarAccion();
@@ -62,7 +64,7 @@ namespace Negocio
                 conexion.ConnectionString = "server=.\\SQLEXPRESS; database=ECOMMERCE; integrated security=true";
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = "SELECT NROCOMPROBANTE, IDCLIENTE, FORMADEENVIO, PIDEFACTURA, FORMADEPAGO, FECHAALTA, ESTADO, HORAALTA, TOTAL from DETALLEPEDIDO ";
-               // if (id != "")
+                // if (id != "")
                 comando.CommandText += " WHERE IDCLIENTE = " + id;
                 comando.Connection = conexion;
 
@@ -116,7 +118,7 @@ namespace Negocio
             {
                 conexion.ConnectionString = "server=.\\SQLEXPRESS; database=ECOMMERCE; integrated security=true";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "SELECT D.NROCOMPROBANTE, D.IDCLIENTE, C.NOMBRES, C.APELLIDOS, DO.PROVINCIA, DO.PARTIDO, D.FORMADEENVIO, D.PIDEFACTURA, D.FORMADEPAGO, D.FECHAALTA,  D.HORAALTA, D.Estado, D.TOTAL from DETALLEPEDIDO AS D INNER JOIN CLIENTES AS C ON D.IDCLIENTE= C.IDCLIENTE INNER JOIN DOMICILIOS AS DO ON C.IDCLIENTE = DO.IDDOMICILIO";
+                comando.CommandText = "SELECT D.NROCOMPROBANTE, D.IDCLIENTE, C.NOMBRES, C.APELLIDOS, DO.PROVINCIA, DO.PARTIDO, D.FORMADEENVIO, D.PIDEFACTURA, C.CUIT, C.CONDICION_FISCAL, D.FORMADEPAGO, D.FECHAALTA,  D.HORAALTA, D.Estado, D.TOTAL from DETALLEPEDIDO AS D INNER JOIN CLIENTES AS C ON D.IDCLIENTE= C.IDCLIENTE INNER JOIN DOMICILIOS AS DO ON C.IDCLIENTE = DO.IDDOMICILIO";
                 comando.Connection = conexion;
 
                 conexion.Open();
@@ -140,6 +142,9 @@ namespace Negocio
                     aux.FACTURA = new Factura();
                     aux.FACTURA.PIDE = (bool)lector["PIDEFACTURA"];
 
+
+                    aux.FACTURA.NROCUIT = (string)lector["CUIT"];
+                    aux.FACTURA.CONDICIONFISCAL = (string)lector["CONDICION_FISCAL"];
                     aux.FORMADEPAGO = (string)lector["FORMADEPAGO"];
                     aux.FECHAALTA = (DateTime)lector["FECHAALTA"];
                     aux.HORAALTA = (TimeSpan)lector["HORAALTA"];
@@ -188,7 +193,7 @@ namespace Negocio
             try
             {
                 datos.setearSP("listarDetallePedidoConSP");// ESTO LO AGREGO EN LA CLASE DE ACCESO A DATOS
-                //CON ESTO EVITO LA CONSULTA EMBEBIDA QUE PUEDE FALLAR EN ALGUNA COMA Y ROMPE
+                                                           //CON ESTO EVITO LA CONSULTA EMBEBIDA QUE PUEDE FALLAR EN ALGUNA COMA Y ROMPE
 
 
                 datos.ejecutarLectura();
@@ -205,7 +210,7 @@ namespace Negocio
                     aux.Debilidad = new Elemento();
                     aux.Debilidad.Descripcion = (string)datos.Lector["Debilidad"];
 
-                    
+
                     lista.Add(aux);
                     */
                 }

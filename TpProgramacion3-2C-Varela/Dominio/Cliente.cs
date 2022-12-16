@@ -41,6 +41,8 @@ namespace Dominio
 
         public Domicilio DOMICILIO { get; set; }
 
+        
+
 
     }
 }

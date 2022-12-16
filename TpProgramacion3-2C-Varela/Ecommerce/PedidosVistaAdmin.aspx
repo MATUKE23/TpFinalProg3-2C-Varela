@@ -17,6 +17,7 @@
             <asp:BoundField HeaderText="Partido" DataField="CLIENTE.DOMICILIO.PARTIDO" />
             <asp:BoundField HeaderText="Forma de Envio" DataField="FORMADEENVIO" />
             <asp:CheckBoxField HeaderText="Solicito Factura" DataField="FACTURA.PIDE" />
+            <%--<asp:BoundField HeaderText="CUIT" DataField="FACTURA.NROCUIT" />--%>
             <asp:BoundField HeaderText="Forma de Pago" DataField="FORMADEPAGO" />
             <asp:BoundField HeaderText="Fecha de Venta" DataField="FECHAALTA" />
             <asp:BoundField HeaderText="Hora de Venta" DataField="HORAALTA" />

@@ -124,7 +124,7 @@ namespace Ecommerce
             nuevoDetallePedido.FACTURA = new Factura();
             nuevoDetallePedido.FACTURA.PIDE = rdbSI.Checked;
             nuevoDetallePedido.FACTURA.CONDICIONFISCAL = ddlCondFiscal.SelectedValue;
-            nuevoDetallePedido.FACTURA.NROCUIT = txtCUIT.ToString();
+            nuevoDetallePedido.FACTURA.NROCUIT = txtCUIT.Text;
             nuevoDetallePedido.FORMADEPAGO = ddlFormaDePago.SelectedValue;
             nuevoDetallePedido.CARRITO = new CarritoC();
             nuevoDetallePedido.CARRITO.MONTO = total;
